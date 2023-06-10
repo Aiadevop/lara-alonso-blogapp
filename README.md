@@ -33,6 +33,8 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
 
+npm i next@latest react@latest react-dom@latest eslint-config-next@latest
+
 npx create-next-app@latest
 
 PS C:\Users\Lara\Desktop\CS_DAW\Mybranch\Blog> npx create-next-app@latest
@@ -59,4 +61,65 @@ Installing dependencies:
 - autoprefixer
 - eslint
 - eslint-config-next
+
+When finish your installation: cd projectname
+npm run dev
+
+> blogapp@0.1.0 dev
+> next dev
+
+- ready started server on 0.0.0.0:3000, url: http://localhost:3000
+
+if you enter in http://localhost:3000 you have your basic page.
+
+
+How make the debugger??
+
+Create a new folder .vscode
+Create in this folder launch.json
+
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Launch",
+            "program": "${workspaceFolder}/pages/index.js",
+            "request": "launch",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "type": "node"
+        },
+    
+        {
+            "name": "Attach",
+            "type": "node",
+            "request": "attach",
+            "port": 9229
+        }
+    ]  
+  }
+
+  In package.json
+
+    "scripts": {
+    "dev": "cross-env NODE_OPTIONS='--inspect=0.0.0.0:9229'next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+
+  and install npm install cross-env
+
+  When you click debugger and put red point you stop in this place and look your code.
+
+  page.js is your principal page
+
+  If you want create new routes you create a new folder with a name of the route, for example blog and create a page.js file in this folder.
+
+  The route is http://localhost:3000/blog
+
+
+
+
 
