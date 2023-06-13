@@ -24,8 +24,8 @@ export default function Portfolio() {
             alt="Lara Alonso image"
             className="inline-block rounded-full "
           />
-          <div className="mt-10 text-3xl">Hola, soy Lara!</div>
-          <div className=" mx-auto max-w-5xl px-6 pt-12 items-center text-lg leading-8 ">
+          <div className="mt-10 text-3xl text-gray-100">Hola, soy Lara!</div>
+          <div className=" mx-auto max-w-5xl px-6 pt-12 items-center text-lg leading-8 text-gray-100 ">
             <p>Soy frontend developer y resido en España.
               Creo experiencias web y aplicaciones. Explora mi portfolio y descubre mis proyectos. </p>
             <div className="flex justify-center items-center"><strong>¡Tu visión mi código!</strong></div>

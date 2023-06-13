@@ -10,17 +10,17 @@ export default function Page3() {
         <>
             <div className="bg-black">
                 <Navbarblack />
-                <article className="max-w-2xl px-6 py-24 mx-auto space-y-12 dark:bg-gray-100 text-gray-900">
+                <article className="max-w-2xl px-6 py-24 mx-auto space-y-12 bg-gray-100 text-gray-900 mt-20">
                     <div className="w-full mx-auto space-y-4 text-center">
                         <h1 className="text-4xl font-bold leadi md:text-5xl">Como crear rutas en Next.js 13</h1>
-                        <div className="text-sm dark:text-gray-400">by {' '}
-                            <a rel="noopener noreferrer" href="#" target="_blank" className="underline dark:text-violet-400">
+                        <div className="text-sm text-gray-400">by {' '}
+                            <a rel="noopener noreferrer" href="#" target="_blank" className="underline text-violet-400">
                                 <span itemProp="name">Lara Alonso</span>
                             </a>
                             <time dateTime="2023-06-12 ">{' '}12/06/2023</time>
                         </div>
                     </div>
-                    <div className="dark:text-gray-900">
+                    <div className="text-gray-900">
                         <div><strong className="text-xl">¿Te vuelves loc@ con Next.js 13 y sus rutas?.</strong> En un momento vemos cuales son las diferencias.</div>
                         <br />
                         <div>En NextJS 12 o anterior usábamos la carpeta pages. Cada archivo en el <strong>directorio /src/pages</strong> se convierte automáticamente en una ruta accesible en tu aplicación.</div>

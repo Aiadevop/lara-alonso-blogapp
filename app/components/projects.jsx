@@ -41,7 +41,7 @@ export const Projects = () => {
                     </blockquote>
                 </figure>
                 <figure className="flex flex-col items-center justify-center border border-fuchsia-200 border-2xl p-8 text-center bg-gradient-to-r from-blackdark via-blackdark to-black border-b border-gray-200 rounded-tr-lg ">
-                    <blockquote className="max-w-2xl mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400">
+                    <blockquote className="max-w-2xl mx-auto mb-4 text-gray-500 lg:mb-8 text-gray-400">
                         <Link href="https://github.com/Aiadevop/hebe-web">
                             <div
                                 className="flex flex-row justify-center items-center"
@@ -62,7 +62,7 @@ export const Projects = () => {
                     </blockquote>
                 </figure>
                 <figure className="flex flex-col items-center justify-center border border-fuchsia-200 border-2xl p-8 text-center bg-gradient-to-r from-blackdark via-blackdark to-black border-b border-gray-200 rounded-bl-lg md:border-b-0 md:border-r ">
-                    <blockquote className="max-w-2xl mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400">
+                    <blockquote className="max-w-2xl mx-auto mb-4 text-gray-500 lg:mb-8 text-gray-400">
                         <Link href="https://github.com/Aiadevop/pokemongame">
                             <div className="flex flex-row justify-center items-center"
                                 onMouseEnter={() => setIsHovered3(true)}
@@ -85,7 +85,7 @@ export const Projects = () => {
                     </blockquote>
                 </figure>
                 <figure className="flex flex-col items-center justify-center border border-fuchsia-200 border-2xl p-8 text-center bg-gradient-to-r from-blackdark via-blackdark to-black border-gray-200 rounded-b-lg md:rounded-br-lg ">
-                    <blockquote className="max-w-2xl mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400">
+                    <blockquote className="max-w-2xl mx-auto mb-4 text-gray-500 lg:mb-8 text-gray-400">
                         <Link href="https://github.com/Aiadevop/7-Restserver">
                             <div className="flex flex-row justify-center items-center"
                                 onMouseEnter={() => setIsHovered4(true)}
@@ -107,7 +107,7 @@ export const Projects = () => {
                     </blockquote>
                 </figure>
                 <figure className="flex flex-col items-center justify-center border border-fuchsia-200 border-2xl p-8 text-center bg-gradient-to-r from-blackdark via-blackdark to-black border-b border-gray-200 rounded-bl-lg md:border-b-0 md:border-r ">
-                    <blockquote className="max-w-2xl mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400">
+                    <blockquote className="max-w-2xl mx-auto mb-4 text-gray-500 lg:mb-8 text-gray-400">
                         <Link href="https://github.com/Aiadevop/Aplicacion-tickets">
                             <div className="flex flex-row justify-center items-center"
                                 onMouseEnter={() => setIsHovered5(true)}
@@ -129,7 +129,7 @@ export const Projects = () => {
                     </blockquote>
                 </figure>
                 <figure className="flex flex-col items-center justify-center border border-fuchsia-200 border-2xl p-8 text-center bg-gradient-to-r from-blackdark via-blackdark to-black border-gray-200 rounded-b-lg md:rounded-br-lg ">
-                    <blockquote className="max-w-2xl mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400">
+                    <blockquote className="max-w-2xl mx-auto mb-4 text-gray-500 lg:mb-8 text-gray-400">
                         <Link href="https://github.com/Aiadevop/issues-react-query">
                             <div className="flex flex-row justify-center items-center"
                                 onMouseEnter={() => setIsHovered6(true)}

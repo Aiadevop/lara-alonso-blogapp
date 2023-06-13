@@ -47,6 +47,7 @@ export const FooterBlack = () => {
                     </div>
                 </div>
             </footer>
+            <Link href="/atribuciones"><div className='bg-black text-gray-300 pt-8 text-xs leading-5 text-gray-500 md:order-1 md:mt-0 pl-8 pb-8'>Gracias a todos los que han colaborado en este blog</div></Link> 
         </>
     )
 }

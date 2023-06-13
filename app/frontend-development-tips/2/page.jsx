@@ -17,17 +17,17 @@ export default function Page2() {
     <>
       <div className="bg-black">
         <Navbarblack />
-        <article className="max-w-2xl px-6 py-24 mx-auto space-y-12 dark:bg-gray-100 text-gray-900">
+        <article className="max-w-2xl px-6 py-24 mx-auto space-y-12 bg-gray-100 text-gray-900 mt-20">
           <div className="w-full mx-auto space-y-4 text-center">
             <h1 className="text-4xl font-bold leadi md:text-5xl">Como poner Attach como debugger en VSC</h1>
-            <div className="text-sm dark:text-gray-400">by {' '}
-              <a rel="noopener noreferrer" href="/lara-alonso-portfolio" target="_blank" className="underline dark:text-violet-400">
+            <div className="text-sm text-gray-400">by {' '}
+              <a rel="noopener noreferrer" href="/lara-alonso-portfolio" target="_blank" className="underline text-violet-400">
                 <span itemProp="name">Lara Alonso</span>
               </a>
               <time dateTime="2023-06-13 ">{' '}13/06/2023</time>
             </div>
           </div>
-          <div className="dark:text-gray-900">
+          <div className="text-gray-900">
             <div><strong className="text-xl">¿Qué es Attach? ¿Qué es debuggar?</strong></div>
             <br />
             <div>El término<strong> &quot;debuggar&quot; </strong> en programación se refiere al proceso de <strong>identificar, analizar y corregir errores o fallos en el código</strong>
