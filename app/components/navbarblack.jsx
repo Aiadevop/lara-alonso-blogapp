@@ -22,10 +22,10 @@ export default function Navbarblack() {
                                     <div>
                                         <Image
                                             className="flex flex-1 items-center justify-center flex-col ml-1"
-                                            src="/icons/laralonsoround.png "
+                                            src="/icons/laralonsoround.png"
                                             width={65}
                                             height={65.5}
-                                            alt="Picture of the author"
+                                            alt="Lara Alonso Favicon"
                                         />
                                     </div>
                                     <div className="sm:flex flex-1 items-center justify-center flex-col ml-1 hidden">

@@ -19,7 +19,7 @@ export default function Navbar() {
                             <div>
                                 <Image
                                     className="flex flex-1 items-center justify-center flex-col ml-1"
-                                    src="/icons/favicon.png "
+                                    src="/icons/laralonsoround.png "
                                     width={65}
                                     height={65.5}
                                     alt="Lara Alonso favicon"
