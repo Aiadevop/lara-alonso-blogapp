@@ -11,7 +11,7 @@
         "datetime": "2023-06-12",
         "author": {
             "name": "Lara Alonso",
-            "imageUrl": "/img/profileIcon.jpeg ",
+            "imageUrl": "/img/profileIcon.png ",
             "href": "/lara-alonso-portfolio"
         }
     },
@@ -27,7 +27,7 @@
         "datetime": "2023-06-13",
         "author": {
             "name": "Lara Alonso",
-            "imageUrl": "/img/profileIcon.jpeg "
+            "imageUrl": "/img/profileIcon.png "
         }
     },
     {
@@ -42,7 +42,7 @@
         "datetime": "2023-06-12",
         "author": {
             "name": "Lara Alonso",
-            "imageUrl": "/img/profileIcon.jpeg "
+            "imageUrl": "/img/profileIcon.png "
         }
     }
 ]

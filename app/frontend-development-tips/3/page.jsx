@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import { FooterBlack } from "@/app/components/footerblack";
 import { FooterPost } from "@/app/components/footerpost";
 import Navbarblack from "@/app/components/navbarblack";
@@ -43,7 +44,7 @@ export default function Page3() {
                         <li>Template: Siendo opcional y similar a Layout con la diferencia que no guardará el estado de sus componentes hijos y los efectos serán reiniciados, este será como una recarga total cuando navegamos dentro de uno de estos componentes.</li>
                         <li>Head: Es un archivo opcional para cambiar el contenido de la etiqueta head.</li>
                         <br />
-                        <Image
+                        <img
                             className="flex flex-1 items-center justify-center flex-col ml-1"
                             src="/img/rutas.png "
                             width={819.2}
