@@ -15,7 +15,7 @@ export default function Articulos() {
                         <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl pt-16">Frontend development tips</h2>
                         <div className="mt-2 text-lg leading-8 text-gray-600" />
                         <div className="mt-16 space-y-20 lg:mt-20 lg:space-y-20">
-                            {posts.map((post) => (
+                            {postreverse.map((post) => (
                                 <article key={post.id} className="relative isolate flex flex-col gap-8 lg:flex-row">
                                     <Link href={post.href}>
                                         <div className="relative aspect-[16/9] sm:aspect-[2/1] lg:aspect-square lg:w-64 lg:shrink-0">
