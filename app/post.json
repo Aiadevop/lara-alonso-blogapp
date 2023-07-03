@@ -44,5 +44,50 @@
             "name": "Lara Alonso",
             "imageUrl": "/img/profileIcon.png "
         }
+    },
+    {
+        "id": 4,
+        "title": "Como generar prompts increíbles en ChatGPT",
+        "href": "frontend-development-tips/4",
+        "description": "Todo el mundo habla de ingeniería de prompts, pero ¿cómo generar un buén prompt?",
+        "category": "ChatGPT",
+        "imageUrl": "/img/ia1.PNG ",
+        "alt": "Prompt ChatGPT",
+        "date": "Sab 01 Julio 2023",
+        "datetime": "2023-07-01",
+        "author": {
+            "name": "Lara Alonso",
+            "imageUrl": "/img/profileIcon.png "
+        }
+    },
+    {
+        "id": 5,
+        "title": "¿Por qué ChatGPT me devuelve una respuesta tan rara?",
+        "href": "frontend-development-tips/5",
+        "description": "Cómo lee ChatGPT, que hay que tener en cuenta cuando le escribimos.",
+        "category": "ChatGPT",
+        "imageUrl": "/img/ia2.PNG ",
+        "alt": "Prompt ChatGPT",
+        "date": "Sab 01 Julio 2023",
+        "datetime": "2023-07-01",
+        "author": {
+            "name": "Lara Alonso",
+            "imageUrl": "/img/profileIcon.png "
+        }
+    },
+    {
+        "id": 6,
+        "title": "¿Trabajas con Nodejs o Phyton? Conéctate a la API de OpenAI",
+        "href": "frontend-development-tips/6",
+        "description": "Conecta tu aplicación de forma muy sencilla.",
+        "category": "ChatGPT",
+        "imageUrl": "/img/ia4.PNG ",
+        "alt": "Prompt ChatGPT",
+        "date": "Sab 01 Julio 2023",
+        "datetime": "2023-07-01",
+        "author": {
+            "name": "Lara Alonso",
+            "imageUrl": "/img/profileIcon.png "
+        }
     }
 ]

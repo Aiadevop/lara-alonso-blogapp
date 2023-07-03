@@ -26,6 +26,10 @@ module.exports = {
         'violetcustom':'#FA00D5',
         'fuin':'gradient-to-r from-fuchsia-600 to-indigo-600'
       },
+      fontFamily: {
+        'roboto': 'roboto',
+        'mono': 'ui-monospace'
+      }
     },
   },
   plugins: [],

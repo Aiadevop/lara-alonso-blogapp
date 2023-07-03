@@ -2,7 +2,6 @@
 import { FooterBlack } from "@/app/components/footerblack";
 import { FooterPost } from "@/app/components/footerpost";
 import Navbarblack from "@/app/components/navbarblack";
-import Image from "next/image";
 import Link from "next/link";
 
 
@@ -11,7 +10,7 @@ export default function Page3() {
         <>
             <div className="bg-black">
                 <Navbarblack />
-                <article className="max-w-2xl px-6 py-24 mx-auto space-y-12 bg-gray-100 text-gray-900 mt-20">
+                <article className="max-w-5xl px-6 py-24 mx-auto space-y-12 bg-gray-100 text-gray-900 mt-20">
                     <div className="w-full mx-auto space-y-4 text-center">
                         <h1 className="text-4xl font-bold leadi md:text-5xl">Como crear rutas en Next.js 13</h1>
                         <div className="text-sm text-gray-400">by {' '}
