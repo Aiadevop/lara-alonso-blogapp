@@ -20,7 +20,7 @@ export default function Page6() {
                             <time dateTime="2023-06-12 ">{' '}12/06/2023</time>
                         </div>
                     </div>
-                    <div><strong className="text-xl">¿Trabajas con Nodejs o Phyton? OpenAI te lo pone muy fácil.</strong></div>
+                    <div><b className="text-xl text-violetitle">¿Trabajas con Nodejs o Phyton? OpenAI te lo pone muy fácil.</b></div>
                     <br />
                     <div className="text-gray-900">
                         <div>OPENAI nos pone muy fácil integrarlo en nuestras aplicaciones, en el siguiente enlace nos da dos códigos básicos para que funcione en
@@ -33,24 +33,24 @@ export default function Page6() {
                             </div>
                         </Link>
                         <br />
-                        <div><strong>Parámetros de la API que puedes configurar:</strong></div>
+                        <div className="text-xl text-violetitle"><b>Parámetros de la API que puedes configurar:</b></div>
                         <br />
                         <div className="font-mono bg-black text-white">
                             <br />
                             <div className="ml-2">const completion = await openai.createCompletion &#40;&#123;</div>
-                            <div className="ml-8"><strong>model: </strong>&#34;text-davinci-003&#34;, &#40;versión que hayas contratado&#41;</div>
-                            <div className="ml-8"><strong>prompt: </strong>generatePrompt(prompt), &#40;aquí va el prompt que utilizas&#41;</div>
-                            <div className="ml-8"><strong>temperature: </strong>0.6, &#40;0-1&#41;</div>
+                            <div className="ml-8"><b>model: </b>&#34;text-davinci-003&#34;, &#40;versión que hayas contratado&#41;</div>
+                            <div className="ml-8"><b>prompt: </b>generatePrompt(prompt), &#40;aquí va el prompt que utilizas&#41;</div>
+                            <div className="ml-8"><b>temperature: </b>0.6, &#40;0-1&#41;</div>
                             <div className="ml-12">0- &#40;Devuelve resultados idénticos o similares&#41;</div>
                             <div className="ml-12">1- &#40;Los resultados pueden ser muy diversos&#41;</div>
-                            <div className="ml-8"><strong>max_tokens: </strong>150, &#40;Longitud de la respuesta de salida&#41;</div>
-                            <div className="ml-8"><strong>top_p: </strong>1, &#40;0-1&#41; &#40;Cuanto más bajo es este valor más improbable será el resultado&#41;</div>
-                            <div className="ml-8"><strong>frequency_penalty: </strong>0.5, &#40;0-1&#41; &#40;Cuanto más bajo disminuye la posibilidad de repetir palabras en otra línea&#41;</div>
-                            <div className="ml-8"><strong>presence_penalty: </strong>0, &#40;0-1&#41; &#40;Cuanto más alto aumenta la posibilidad de que nuestro modelo hable sobre nuevos temas&#41;</div>
+                            <div className="ml-8"><b>max_tokens: </b>150, &#40;Longitud de la respuesta de salida&#41;</div>
+                            <div className="ml-8"><b>top_p: </b>1, &#40;0-1&#41; &#40;Cuanto más bajo es este valor más improbable será el resultado&#41;</div>
+                            <div className="ml-8"><b>frequency_penalty: </b>0.5, &#40;0-1&#41; &#40;Cuanto más bajo disminuye la posibilidad de repetir palabras en otra línea&#41;</div>
+                            <div className="ml-8"><b>presence_penalty: </b>0, &#40;0-1&#41; &#40;Cuanto más alto aumenta la posibilidad de que nuestro modelo hable sobre nuevos temas&#41;</div>
                             <br />
                         </div>
                         <br />
-                        <div>Aquí tenéis algunos ejemplos:</div>
+                        <div className="text-xl text-violetitle"><b>Aquí tenéis algunos ejemplos:</b></div>
                         <br/>
                         <div className="flex items-center">
                             <img

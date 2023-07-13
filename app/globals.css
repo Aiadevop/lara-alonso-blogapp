@@ -24,4 +24,10 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+ 
 }
+
+body p{
+  margin-top: 0;
+}
+

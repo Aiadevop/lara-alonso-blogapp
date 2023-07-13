@@ -27,19 +27,19 @@ export default function Page2() {
             </div>
           </div>
           <div className="text-gray-900">
-            <div><strong className="text-xl">¿Qué es Attach? ¿Qué es debuggar?</strong></div>
+            <div><b className="text-xl text-violetitle">¿Qué es Attach? ¿Qué es debuggar?</b></div>
             <br />
-            <div>El término<strong> &quot;debuggar&quot; </strong> en programación se refiere al proceso de <strong>identificar, analizar y corregir errores o fallos en el código</strong>
+            <div>El término<b> &quot;debuggar&quot; </b> en programación se refiere al proceso de <b>identificar, analizar y corregir errores o fallos en el código</b>
               de un programa.
               El objetivo del debugging es encontrar y solucionar los problemas que puedan estar causando un comportamiento incorrecto, inesperado o no deseado en un programa.</div>
             <div>El debugging se realiza mediante el uso de herramientas específicas, como depuradores o debuggers, que permiten examinar el estado interno del programa en tiempo de ejecución.
               Estas herramientas permiten realizar acciones como establecer puntos de interrupción en el código, examinar el valor de las variables en diferentes momentos, seguir la ejecución
               línea por línea, entre otras funcionalidades.</div>
 
-            <div>En el contexto de la programación, <strong>&quot;Attach&quot;</strong> se refiere a la acción de conectar o vincular un proceso en ejecución a una
-              <strong> herramienta de depuración, </strong>como un depurador o un profiler.</div>
+            <div>En el contexto de la programación, <b>&quot;Attach&quot;</b> se refiere a la acción de conectar o vincular un proceso en ejecución a una
+              <b> herramienta de depuración, </b>como un depurador o un profiler.</div>
             <div>Cuando se realiza el &quot;Attach&quot; a un proceso, se establece una conexión entre la herramienta de depuración y el programa en ejecución. Esto permite al desarrollador examinar
-              el estado interno del programa,<strong> realizar seguimiento de la ejecución, inspeccionar variables</strong> y realizar otras acciones de depuración en tiempo real.</div>
+              el estado interno del programa,<b> realizar seguimiento de la ejecución, inspeccionar variables</b> y realizar otras acciones de depuración en tiempo real.</div>
             <div>El &quot;Attach&quot; es especialmente útil en situaciones en las que no es posible iniciar el programa desde el principio en modo de depuración, como en el caso de programas que ya
               están en ejecución, aplicaciones de terceros o programas en entornos de producción. Al adjuntar la herramienta de depuración al proceso en ejecución, el desarrollador puede analizar
               y solucionar problemas sin necesidad de reiniciar el programa.</div>
@@ -47,16 +47,16 @@ export default function Page2() {
               requerir que el programa se ejecute en un modo especial de depuración desde el inicio para poder ser inspeccionado por una herramienta de depuración.</div>
 
             <br />
-            <div><strong className="text-xl">¿Y cómo configuro Attach en Visual Studio Code?</strong></div>
+            <div><b className="text-xl text-violetitle">¿Y cómo configuro Attach en Visual Studio Code?</b></div>
             <br />
-            <div>Lo primero, como siempre, aquí tienes la documentación oficial en <a href="https://code.visualstudio.com/docs/editor/debugging"><strong>
-              https://code.visualstudio.com/docs/editor/debugging</strong></a></div>
+            <div>Lo primero, como siempre, aquí tienes la documentación oficial en <a href="https://code.visualstudio.com/docs/editor/debugging"><b>
+              https://code.visualstudio.com/docs/editor/debugging</b></a></div>
 
             <br />
 
 
-            <li> Crea una nueva carpeta en la raíz del proyecto que se llame <strong>.vscode</strong> </li>
-            <li> Dentro de esta carpeta crea un archivo <strong>launch.json</strong>con el siguiente código:</li>
+            <li> Crea una nueva carpeta en la raíz del proyecto que se llame <b>.vscode</b> </li>
+            <li> Dentro de esta carpeta crea un archivo <b>launch.json</b>con el siguiente código:</li>
             <br/>
               <div>&#123;</div>
               <div className="ml-3">&quot;version&quot;: &quot;0.2.0&quot;, </div>
@@ -82,7 +82,7 @@ export default function Page2() {
 
               <br/>
             <li>Instala el paquete npm i cross-env</li>
-            <li>A continuación en el archivo <strong>package.json</strong> modifica el &quot;dev&quot; que está dentro de scripts:</li>
+            <li>A continuación en el archivo <b>package.json</b> modifica el &quot;dev&quot; que está dentro de scripts:</li>
             <br/>
             <div>  &quot;dev&quot;: &quot;cross-env NODE_OPTIONS=&#39;--inspect=0.0.0.0:9229&#39;next dev&quot;,</div>
             <br/>

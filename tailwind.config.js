@@ -24,7 +24,8 @@ module.exports = {
         'turq':'#07FAEB',
         'turqdark':'#09ADA2',
         'violetcustom':'#FA00D5',
-        'fuin':'gradient-to-r from-fuchsia-600 to-indigo-600'
+        'fuin':'gradient-to-r from-fuchsia-600 to-indigo-600',
+        'violetitle':'#700e7f'
       },
       fontFamily: {
         'roboto': 'roboto',

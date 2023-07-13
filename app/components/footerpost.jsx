@@ -14,7 +14,7 @@ export const FooterPost = () => {
                                 Especializada en frontend, creo experiencias web y aplicaciones. Explora mi portfolio y descubre mis proyectos. </div>
                             <br />
                             <Link href="/lara-alonso-portfolio">
-                                <div className="flex justify-start items-start"><strong >¡Tu visión mi código!</strong></div></Link>
+                                <div className="flex justify-start items-start"><b >¡Tu visión mi código!</b></div></Link>
                         </div>
                     </div>
                 </div>

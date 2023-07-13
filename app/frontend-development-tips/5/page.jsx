@@ -21,12 +21,12 @@ export default function Page5() {
                         </div>
                     </div>
                     <div className="text-gray-900">
-                        <div><strong className="text-xl">¿Cómo piensa ChatGPT?.</strong></div>
+                        <div><b className="text-xl text-violetitle">¿Cómo piensa ChatGPT?.</b></div>
                         <br />
                         <div>Lo primero que se explica en el curso de OPENAI para desarrolladores es que hay que tener dos cosas siempre en cuenta para hablar con una
-                            inteligencia artificial <strong>CLARIDAD Y TIEMPO</strong> ¿y esto qué significa?</div>
+                            inteligencia artificial <b>CLARIDAD Y TIEMPO</b> ¿y esto qué significa?</div>
                         <br />
-                        <div><strong>Claridad:</strong></div>
+                        <div><b>Claridad:</b></div>
                         <div>
                             <li>El contenido no debe ser ambiguo</li>
                             <li>No se deben utilizar negaciones</li>
@@ -34,16 +34,16 @@ export default function Page5() {
                         </div>
                         <br />
                         <div>Aquí tenéis un ejemplo</div>
-                        <div className="text-red-900"><strong>Forma incorrecta:</strong> &#34; Dame <strong>algunas</strong> ideas que <strong>no sean aburridas</strong> para crear vídeos de Youtube</div>
-                        <div><strong>Forma correcta:</strong> &#34; Dame <strong>15</strong> ideas para crear videos de YouTube  <strong> que los espectadores encuentren realmente divertidas.</strong></div>
+                        <div className="text-red-900"><b>Forma incorrecta:</b> &#34; Dame <b>algunas</b> ideas que <b>no sean aburridas</b> para crear vídeos de Youtube</div>
+                        <div><b>Forma correcta:</b> &#34; Dame <b>15</b> ideas para crear videos de YouTube  <b> que los espectadores encuentren realmente divertidas.</b></div>
                         <br />
-                        <div><strong>Tiempo:</strong></div>
+                        <div><b>Tiempo:</b></div>
                         <div>La inteligencia necesita tiempo para procesar las tareas sobre todo cuando estas son complejas, si no se le da ese tiempo los resultados pueden no ser tan específicos</div>
                         <br />
                         <div>Aquí tenéis un ejemplo</div>
-                        <div className="text-red-900"><strong>Forma incorrecta:</strong> &#34; Necesito que generes las palabras clave para un comercio online de venta de cursos, con esas palabras clave genérame 
+                        <div className="text-red-900"><b>Forma incorrecta:</b> &#34; Necesito que generes las palabras clave para un comercio online de venta de cursos, con esas palabras clave genérame 
                         el SEO y a continuación vete preguntándome mi público objetivo &#34;</div>
-                        <div><strong>Forma correcta:</strong> &#34; Necesito que generes las palabras clave de un comercio online de venta de cursos de dibujo técnico y me muestres el resultado.
+                        <div><b>Forma correcta:</b> &#34; Necesito que generes las palabras clave de un comercio online de venta de cursos de dibujo técnico y me muestres el resultado.
                         Después de mostrarme el resultado anterior generarás el SEO de este comercio online teniendo en cuenta las palabras clave que has generado. Cuando termines me 
                         mostrarás el resultado del SEO.
                         Cuando termines de generar el SEO, me generarás preguntas de una en una y esperás que yo te responda sobre mi público objetivo.</div>
@@ -51,13 +51,13 @@ export default function Page5() {
                         <div>¿Qué más tiene en cuenta ChatGPT?</div>
                         <br />
                         <div>
-                            <li><strong>Tono: </strong>Si yo le hablo en tono coloquial o formal, el me contestará en el mismo tono.</li>
-                            <li><strong>Gramática: </strong>Si escribo de forma incorrecta las palabras, puede interpretar que quiere que responda con errores gramaticales o no entender correctamente
+                            <li><b>Tono: </b>Si yo le hablo en tono coloquial o formal, el me contestará en el mismo tono.</li>
+                            <li><b>Gramática: </b>Si escribo de forma incorrecta las palabras, puede interpretar que quiere que responda con errores gramaticales o no entender correctamente
                             a que me refiero</li>
-                            <li><strong>Idioma: </strong>Todas las inteligencias trabajan mejor en inglés aunque luego traduzcamos el texto.</li>
-                            <li><strong>Especificidad: </strong>No es lo mismo decir &#34; Háblame sobre los perros &#34;, que decir algo como &#34; Dime que tipos de razas de perros son mejores
+                            <li><b>Idioma: </b>Todas las inteligencias trabajan mejor en inglés aunque luego traduzcamos el texto.</li>
+                            <li><b>Especificidad: </b>No es lo mismo decir &#34; Háblame sobre los perros &#34;, que decir algo como &#34; Dime que tipos de razas de perros son mejores
                             para vivir en un apartamento pequeño, si nuestra familia tiene un niño &#34;</li>
-                            <li><strong>Longitud: </strong>Debemos especificar la longitud de salida de la respuesta para mejores resultados. Por ejemplo: &#34; Escríbeme un texto de 50 palabras &#34;</li>
+                            <li><b>Longitud: </b>Debemos especificar la longitud de salida de la respuesta para mejores resultados. Por ejemplo: &#34; Escríbeme un texto de 50 palabras &#34;</li>
                        
                         </div>
                         <br/>

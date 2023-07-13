@@ -1,8 +1,9 @@
 import Link from 'next/link';
 import Navbar from '../components/navbar';
 
+
 /* eslint-disable @next/next/no-img-element */
-const posts = require('../post.json');
+const posts = require('../../app/post.json');
 const postreverse = posts.reverse();
 
 export default function Articulos() {

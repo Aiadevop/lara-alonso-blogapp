@@ -21,16 +21,16 @@ export default function Page3() {
                         </div>
                     </div>
                     <div className="text-gray-900">
-                        <div><strong className="text-xl">¿Te vuelves loc@ con Next.js 13 y sus rutas?.</strong> En un momento vemos cuales son las diferencias.</div>
+                        <div><b className="text-xl text-violetitle">¿Te vuelves loc@ con Next.js 13 y sus rutas?.</b> En un momento vemos cuales son las diferencias.</div>
                         <br />
-                        <div>En NextJS 12 o anterior usábamos la carpeta pages. Cada archivo en el <strong>directorio /src/pages</strong> se convierte automáticamente en una ruta accesible en tu aplicación.</div>
+                        <div>En Next.js 12 o anterior usábamos la carpeta pages. Cada archivo en el <b>directorio /src/pages</b> se convierte automáticamente en una ruta accesible en tu aplicación.</div>
                         <div>Por ejemplo, si tienes un archivo pages/about.js, se creará una ruta /about en tu aplicación Next.js. Si tienes un archivo pages/blog/post.js, se creará una ruta /blog/post en tu aplicación.</div>
                         <div>Además de la estructura de archivos y carpetas, Next.js también proporciona una funcionalidad adicional para la creación de rutas utilizando parámetros dinámicos.
                             Puedes crear rutas dinámicas mediante la inclusión de corchetes [] en el nombre de un archivo dentro del directorio pages.
                             Por ejemplo, un archivo llamado pages/blog/[slug].js creará una ruta dinámica donde slug puede ser cualquier valor en la URL.</div>
 
                         <br />
-                        <div><strong className="text-xl">Y entonces, ¿Qué ha cambiado en Next.js 13?</strong></div>
+                        <div><b className="text-xl text-violetitle">Y entonces, ¿Qué ha cambiado en Next.js 13?</b></div>
                         <br />
                         <div>Lo primero decirte que puedes seguir utilizando la carpeta pages como hacías en las anteriores versiones. Simplemente cuando hagas las instalación de Next indica que quieres
                             seguir utilizando la carpeta /src</div>

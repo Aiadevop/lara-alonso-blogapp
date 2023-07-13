@@ -89,5 +89,51 @@
             "name": "Lara Alonso",
             "imageUrl": "/img/profileIcon.png "
         }
+    },
+    {
+        "id": 7,
+        "title": "Como añadir filtros a tu Blog creado en Next.js o React",
+        "href": "frontend-development-tips/7",
+        "description": "Cómo añadirle filtros a tu blog.",
+        "category": "Next.js",
+        "imageUrl": "/img/i4.PNG ",
+        "alt": "https://res.cloudinary.com/dguhnftxe/image/upload/v1689245123/blog/i4_z95wlm.png",
+        "date": "Lun 12 Julio 2023",
+        "datetime": "2023-07-12",
+        "author": {
+            "name": "Lara Alonso",
+            "imageUrl": "/img/profileIcon.png "
+        }
+    },   
+    {
+        "id": 8,
+        "title": "Mejora tu Visual Studio Code (VSC) con estas extensiones",
+        "href": "frontend-development-tips/8",
+        "description": "Mejora tu VSC con estas extensiones.",
+        "category": "VSC",
+        "imageUrl": "https://res.cloudinary.com/dguhnftxe/image/upload/v1689245119/blog/vsc_hwbjcr.png",
+        "alt": "Extensiones VSC",
+        "date": "Lun 10 Julio 2023",
+        "datetime": "2023-07-10",
+        "author": {
+            "name": "Lara Alonso",
+            "imageUrl": "/img/profileIcon.png "
+        }
+    },
+    {
+        "id": 9,
+        "title": "Cómo utilizar React y Next.js para construir sitios web de alto rendimiento",
+        "href": "frontend-development-tips/9",
+        "description": "Optmiza tu página con React y Next.js.",
+        "category": "Next.js",
+        "imageUrl": "https://res.cloudinary.com/dguhnftxe/image/upload/v1689245118/blog/reactnextx_fazki0.png",
+        "alt": "Optimización React y Next.js",
+        "date": "Lun 10 Julio 2023",
+        "datetime": "2023-07-10",
+        "author": {
+            "name": "Lara Alonso",
+            "imageUrl": "/img/profileIcon.png "
+        }
     }
+
 ]

@@ -20,31 +20,31 @@ export default function Page1() {
             </div>
           </div>
           <div className="text-gray-900">
-            <div><strong className="text-xl">Lo primero ¿qué es Next.js?</strong></div>
+            <div><b className="text-xl text-violetitle">Lo primero, ¿qué es Next.js?</b></div>
             <br />
-            <div><strong>Next.js es un framework de React</strong> utilizado para el desarrollo de aplicaciones web del lado del servidor (SSR) y del lado del cliente (CSR).
+            <div><b>Next.js es un framework de React</b> utilizado para el desarrollo de aplicaciones web del lado del servidor (SSR) y del lado del cliente (CSR).
               Proporciona una capa adicional de abstracción sobre React que permite crear aplicaciones web rápidas y escalables con facilidad.</div>
             <div>Next.js combina características de enrutamiento, renderizado del lado del servidor, generación de páginas estáticas y funcionalidades de desarrollo en una
               sola herramienta. Algunas de las características y ventajas clave de Next.js son las siguientes:</div>
 
-            <li><strong>Renderizado híbrido: </strong> Next.js permite el renderizado del lado del servidor y del lado del cliente, lo que significa que puede generar y enviar páginas completamente renderizadas
+            <li><b>Renderizado híbrido: </b> Next.js permite el renderizado del lado del servidor y del lado del cliente, lo que significa que puede generar y enviar páginas completamente renderizadas
               desde el servidor para una carga inicial rápida, y luego continuar la navegación y la interacción del usuario en el cliente.</li>
-            <li><strong>Generación de páginas estáticas: </strong> Next.js ofrece la capacidad de generar páginas estáticas durante la compilación, lo que significa que se pueden servir archivos HTML pregenerados
+            <li><b>Generación de páginas estáticas: </b> Next.js ofrece la capacidad de generar páginas estáticas durante la compilación, lo que significa que se pueden servir archivos HTML pregenerados
               en lugar de generar contenido dinámico en cada solicitud. Esto mejora significativamente el rendimiento y la velocidad de carga de la página.</li>
-            <li><strong>Enrutamiento sencillo:</strong> Next.js proporciona un sistema de enrutamiento sencillo y basado en archivos que permite definir rutas fácilmente y manejar la navegación entre páginas de
+            <li><b>Enrutamiento sencillo:</b> Next.js proporciona un sistema de enrutamiento sencillo y basado en archivos que permite definir rutas fácilmente y manejar la navegación entre páginas de
               manera intuitiva.</li>
-            <li><strong>Soporte para API y funciones sin servidor: </strong>  Next.js permite crear y acceder a API y funciones sin servidor de forma nativa, lo que facilita la creación de servicios y endpoints personalizados.</li>
-            <li><strong>Optimización automática: </strong> Next.js realiza optimizaciones automáticas como el precargado de rutas, el splitting de código y la carga de imágenes optimizadas, lo que ayuda a mejorar
+            <li><b>Soporte para API y funciones sin servidor: </b>  Next.js permite crear y acceder a API y funciones sin servidor de forma nativa, lo que facilita la creación de servicios y endpoints personalizados.</li>
+            <li><b>Optimización automática: </b> Next.js realiza optimizaciones automáticas como el precargado de rutas, el splitting de código y la carga de imágenes optimizadas, lo que ayuda a mejorar
               el rendimiento y la experiencia del usuario.</li>
             <br />
             <div>Next.js es utilizado en una amplia gama de casos de uso, incluyendo el desarrollo de aplicaciones web complejas, tiendas en línea, blogs, sitios de noticias y mucho más. Es especialmente útil cuando se requiere
               un alto rendimiento, una excelente experiencia de usuario y una fácil escalabilidad.</div>
             <br />
-            <div><strong className="text-xl">Como empezar con NextJS 13</strong></div>
+            <div><b className="text-xl text-violetitle">Como empezar con Next.js 13</b></div>
             <br />
-            <div>Lo primero decirte que tienes toda la documentación oficial en <a href="https://nextjs.org/docs/getting-started/installation"><strong>https://nextjs.org/docs/getting-started/installation</strong></a></div>
+            <div>Lo primero decirte que tienes toda la documentación oficial en <a href="https://nextjs.org/docs/getting-started/installation"><b>https://nextjs.org/docs/getting-started/installation</b></a></div>
             <div>Primero necesitas tener instalado Node.js en una versión 16.8 o superior, aquí te dejo un enlace por si aún no lo tienes <a href="https://nodejs.org/en" className="underline">https://nodejs.org/en</a></div>
-            <div>A continuación puedes ejecutar la instalación automática con <strong>npx create-next-app@latest </strong>y te instalará la última versión de Nextjs. Te hará una serie de preguntas</div>
+            <div>A continuación puedes ejecutar la instalación automática con <b>npx create-next-app@latest </b>y te instalará la última versión de Nextjs. Te hará una serie de preguntas</div>
             <br />
             <li>What is your project named? my-app (nombre que le vas a poner a tu proyecto)</li>
             <li>Would you like to use TypeScript with this project? No / Yes (si quieres trabajar en TypeScript o JavaScript)</li>
@@ -55,8 +55,8 @@ export default function Page1() {
             <li>Use App Router (recommended)? No / Yes</li>
             <li>Would you like to customize the default import alias? No / Yes</li>
             <br />
-            <div>Tras estas preguntas comenzará la instalación y sólo necesitarás acceder al nuevo directorio <strong>cd nombreProyecto</strong> cd nombredetuproyecto en tu terminal.</div>
-            <div>Para ejecutar tu aplicación utilizarás<strong> npm run dev</strong> . Aparecerá un texto como: </div>
+            <div>Tras estas preguntas comenzará la instalación y sólo necesitarás acceder al nuevo directorio <b>cd nombreProyecto</b> cd nombredetuproyecto en tu terminal.</div>
+            <div>Para ejecutar tu aplicación utilizarás<b> npm run dev</b> . Aparecerá un texto como: </div>
             <div>nombreProyecto@0.1.0 dev</div>
             <div>next dev</div>
             <div>ready started server on 0.0.0.0:3000, url: http://localhost:3000</div>

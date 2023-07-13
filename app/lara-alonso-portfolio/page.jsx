@@ -28,7 +28,7 @@ export default function Portfolio() {
           <div className=" mx-auto max-w-5xl px-6 pt-12 items-center text-lg leading-8 text-gray-100 ">
             <p>Soy frontend developer y resido en España.
               Creo experiencias web y aplicaciones. Explora mi portfolio y descubre mis proyectos. </p>
-            <div className="flex justify-center items-center"><strong>¡Tu visión mi código!</strong></div>
+            <div className="flex justify-center items-center"><b>¡Tu visión mi código!</b></div>
           </div>
 
         </div>

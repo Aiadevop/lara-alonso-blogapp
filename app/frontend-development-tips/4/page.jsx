@@ -21,7 +21,7 @@ export default function Page4() {
                         </div>
                     </div>
                     <div className="text-gray-900">
-                        <div><strong className="text-xl">¿Quieres conseguir mejores resultados con ChatGPT?.</strong> Aquí te muestro un esquema para mejorar tus prompts.</div>
+                        <div><b className="text-xl text-violetitle">¿Quieres conseguir mejores resultados con ChatGPT?.</b> Aquí te muestro un esquema para mejorar tus prompts.</div>
                         <br />
                         <div className="flex items-center">
                             <img
@@ -35,37 +35,37 @@ export default function Page4() {
                         <br />
                         <div>Aquí tenéis un ejemplo de una buen prompt</div>
                         <br />
-                        <div><strong>¿Quién soy?</strong></div>
-                        <div><strong>Soy </strong> instructora en línea en varias plataformas. <strong>Me gusta</strong> enseñar a la gente y <strong>solía ser </strong>
+                        <div><b>¿Quién soy?</b></div>
+                        <div><b>Soy </b> instructora en línea en varias plataformas. <b>Me gusta</b> enseñar a la gente y <b>solía ser </b>
                             freelance en línea. Antes de eso yo editaba vídeos.</div>
 
                         <br />
-                        <div><strong>¿Quién es ChatGPT?</strong></div>
-                        <div>En este escenario específico <strong>actuarás como </strong> un vendedor de cursos en línea con más de 10 años de experiencia en marketing.  <strong>Tienes </strong>
-                            cursos online con más de 10.000.000 de suscriptores.  <strong>Eres </strong>un profesional en términos de comercialización de cursos en línea.</div>
+                        <div><b>¿Quién es ChatGPT?</b></div>
+                        <div>En este escenario específico <b>actuarás como </b> un vendedor de cursos en línea con más de 10 años de experiencia en marketing.  <b>Tienes </b>
+                            cursos online con más de 10.000.000 de suscriptores.  <b>Eres </b>un profesional en términos de comercialización de cursos en línea.</div>
 
                         <br />
-                        <div><strong>Topic (Tema)</strong></div>
-                        <div>El <strong>tema principal </strong> de este debate es : &#34; &#34; &#34;Promoción y marketing de cursos online&#34; &#34; &#34;.</div>
+                        <div><b>Topic (Tema)</b></div>
+                        <div>El <b>tema principal </b> de este debate es : &#34; &#34; &#34;Promoción y marketing de cursos online&#34; &#34; &#34;.</div>
 
                         <br />
-                        <div><strong>Contexto</strong></div>
-                        <div><strong>Tengo </strong> Tengo un curso en línea en el que se enseñó a utilizar a DALL-E 2, <strong>pero</strong> casi no hay inscripciones,
-                            excepto las que tengo de amigos y familiares. <strong>He intentado</strong> promorcionarlo en varios grupos de facebook, pero sin resultados.
-                            <strong>No tengo</strong> muchas experiencia en términos de marketing y <strong>mi presupuesto </strong>es limitado. <strong>Contraté </strong> a un artista
+                        <div><b>Contexto</b></div>
+                        <div><b>Tengo </b> Tengo un curso en línea en el que se enseñó a utilizar a DALL-E 2, <b>pero</b> casi no hay inscripciones,
+                            excepto las que tengo de amigos y familiares. <b>He intentado</b> promorcionarlo en varios grupos de facebook, pero sin resultados.
+                            <b>No tengo</b> muchas experiencia en términos de marketing y <b>mi presupuesto </b>es limitado. <b>Contraté </b> a un artista
                             para crear una buena miniatura, por lo que la miniatura se ve impresionante. Definitivamente no es el problema. El trailer también está bien hecho. </div>
 
                         <br />
-                        <div><strong>Tarea que debes hacer</strong></div>
-                        <div><strong>Quiero que </strong> generes una estructura o un plan de marketing que pueda seguir para que mi curso DALL-E 2 consiga más inscripciones en las
+                        <div><b>Tarea que debes hacer</b></div>
+                        <div><b>Quiero que </b> generes una estructura o un plan de marketing que pueda seguir para que mi curso DALL-E 2 consiga más inscripciones en las
                             próximas semanas. </div>
 
                         <br />
                         <div>Y nunca debemos olvidar generar feedback si la respuesta no encaja exactamente con lo que buscamos para perfeccionarla.</div>
                         <br />
    
-                        <div><strong>Feedback</strong></div>
-                        <div><strong>Me falto añadir </strong> mi público objetivo. Hazme preguntas de una en una , esperando mi respuesta para hacerme la siguiente pregunta
+                        <div><b>Feedback</b></div>
+                        <div><b>Me falto añadir </b> mi público objetivo. Hazme preguntas de una en una , esperando mi respuesta para hacerme la siguiente pregunta
                          para que pudas conocer cual es mi público objetivo. </div>
 
 
