@@ -82,7 +82,7 @@
         "description": "Conecta tu aplicación de forma muy sencilla.",
         "category": "ChatGPT",
         "imageUrl": "https://res.cloudinary.com/dguhnftxe/image/upload/v1688379451/ia4_gwhm6q.png",
-        "alt": "Prompt ChatGPT",
+        "alt": "Conectarse OpenAI ChatGPT",
         "date": "Sab 03 Julio 2023",
         "datetime": "2023-07-03",
         "author": {
@@ -96,8 +96,8 @@
         "href": "frontend-development-tips/7",
         "description": "Cómo añadirle filtros a tu blog.",
         "category": "Next.js",
-        "imageUrl": "/img/i4.PNG ",
-        "alt": "https://res.cloudinary.com/dguhnftxe/image/upload/v1689245123/blog/i4_z95wlm.png ",
+        "imageUrl": "https://res.cloudinary.com/dguhnftxe/image/upload/v1689245722/blog/ia3_v3fflq.png",
+        "alt": "Filtros Next.js o React ",
         "date": "Lun 12 Julio 2023",
         "datetime": "2023-07-12",
         "author": {
