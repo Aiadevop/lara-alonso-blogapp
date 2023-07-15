@@ -46,7 +46,7 @@ export default function Blog() {
             {allCategories.map(category => (
               <button
                 type='button'
-                className="rounded-2xl bg-violetitle px-2 pb-2 pt-2 flex justify-center"
+                className="rounded-2xl bg-violetitle px-2 pb-2 pt-2 flex text-white justify-center"
                 onClick={() => handleCategoryChange(category)}
                 key={category}
               >
@@ -57,7 +57,7 @@ export default function Blog() {
           <button className="text-violetitle mt-4 flex justify-start" onClick={handleCategoryClean}>Borrar filtros</button>
 
           <div className="mx-auto mt-8 grid max-w-2xl auto-rows-fr grid-cols-1 gap-8 sm:mt-20 lg:mx-0 lg:max-w-none lg:grid-cols-3">
-            {post.map((post) => (
+            {postreverse.map((post) => (
           
                 <article
                   key={post.id}
