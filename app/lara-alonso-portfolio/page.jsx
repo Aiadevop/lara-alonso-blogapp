@@ -8,12 +8,16 @@ import { Skills } from "../components/skills";
 import { Projects } from "../components/projects";
 import { Linkgit } from "../components/linkgit";
 import { CTA } from "../components/cta";
+import Head from "next/head";
 
 
 
 export default function Portfolio() {
   return (
     <>
+       <Head>
+        <title>Lara Alonso @aiadevop portfolio</title>
+      </Head>
       <div className="bg-black">
         <Navbarblack />
         <div className="flex flex-col justify-center items-center mt-20">

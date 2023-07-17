@@ -2,12 +2,14 @@
 import { FooterBlack } from "@/app/components/footerblack";
 import { FooterPost } from "@/app/components/footerpost";
 import Navbarblack from "@/app/components/navbarblack";
+import Head from "next/head";
 import Link from "next/link";
 
 
 export default function Page6() {
     return (
         <>
+            <Head>Lara Alonso lara-alonso @aiadevop Blog OpenAI ChatGPT</Head>
             <div className="bg-black">
                 <Navbarblack />
                 <article className="max-w-5xl px-6 py-24 mx-auto space-y-12 bg-gray-100 text-gray-900 mt-20">
@@ -51,7 +53,7 @@ export default function Page6() {
                         </div>
                         <br />
                         <div className="text-xl text-violetitle"><b>Aquí tenéis algunos ejemplos:</b></div>
-                        <br/>
+                        <br />
                         <div className="flex items-center">
                             <img
                                 className="flex flex-1 items-center justify-center flex-col ml-1"

@@ -2,12 +2,14 @@
 import { FooterBlack } from "@/app/components/footerblack";
 import { FooterPost } from "@/app/components/footerpost";
 import Navbarblack from "@/app/components/navbarblack";
+import Head from "next/head";
 import Link from "next/link";
 
 
 export default function Page5() {
     return (
         <>
+            <Head>Lara Alonso lara-alonso @aiadevop Blog OpenAI ChatGPT</Head>
             <div className="bg-black">
                 <Navbarblack />
                 <article className="max-w-5xl px-6 py-24 mx-auto space-y-12 bg-gray-100 text-gray-900 mt-20">
@@ -41,26 +43,26 @@ export default function Page5() {
                         <div>La inteligencia necesita tiempo para procesar las tareas sobre todo cuando estas son complejas, si no se le da ese tiempo los resultados pueden no ser tan específicos</div>
                         <br />
                         <div>Aquí tenéis un ejemplo</div>
-                        <div className="text-red-900"><b>Forma incorrecta:</b> &#34; Necesito que generes las palabras clave para un comercio online de venta de cursos, con esas palabras clave genérame 
-                        el SEO y a continuación vete preguntándome mi público objetivo &#34;</div>
+                        <div className="text-red-900"><b>Forma incorrecta:</b> &#34; Necesito que generes las palabras clave para un comercio online de venta de cursos, con esas palabras clave genérame
+                            el SEO y a continuación vete preguntándome mi público objetivo &#34;</div>
                         <div><b>Forma correcta:</b> &#34; Necesito que generes las palabras clave de un comercio online de venta de cursos de dibujo técnico y me muestres el resultado.
-                        Después de mostrarme el resultado anterior generarás el SEO de este comercio online teniendo en cuenta las palabras clave que has generado. Cuando termines me 
-                        mostrarás el resultado del SEO.
-                        Cuando termines de generar el SEO, me generarás preguntas de una en una y esperás que yo te responda sobre mi público objetivo.</div>
+                            Después de mostrarme el resultado anterior generarás el SEO de este comercio online teniendo en cuenta las palabras clave que has generado. Cuando termines me
+                            mostrarás el resultado del SEO.
+                            Cuando termines de generar el SEO, me generarás preguntas de una en una y esperás que yo te responda sobre mi público objetivo.</div>
                         <br />
                         <div>¿Qué más tiene en cuenta ChatGPT?</div>
                         <br />
                         <div>
                             <li><b>Tono: </b>Si yo le hablo en tono coloquial o formal, el me contestará en el mismo tono.</li>
                             <li><b>Gramática: </b>Si escribo de forma incorrecta las palabras, puede interpretar que quiere que responda con errores gramaticales o no entender correctamente
-                            a que me refiero</li>
+                                a que me refiero</li>
                             <li><b>Idioma: </b>Todas las inteligencias trabajan mejor en inglés aunque luego traduzcamos el texto.</li>
                             <li><b>Especificidad: </b>No es lo mismo decir &#34; Háblame sobre los perros &#34;, que decir algo como &#34; Dime que tipos de razas de perros son mejores
-                            para vivir en un apartamento pequeño, si nuestra familia tiene un niño &#34;</li>
+                                para vivir en un apartamento pequeño, si nuestra familia tiene un niño &#34;</li>
                             <li><b>Longitud: </b>Debemos especificar la longitud de salida de la respuesta para mejores resultados. Por ejemplo: &#34; Escríbeme un texto de 50 palabras &#34;</li>
-                       
+
                         </div>
-                        <br/>
+                        <br />
                         <div>Si has llegado hasta aquí y te gustaría saber como generar un buen prompt puedes leer mi artículo {' '}
                             <Link href="/frontend-development-tips/4" className="underline">Como generar prompts increíbles en ChatGPT</Link></div>
                     </div>

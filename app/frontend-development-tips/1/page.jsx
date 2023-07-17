@@ -1,12 +1,14 @@
 import { FooterBlack } from "@/app/components/footerblack";
 import { FooterPost } from "@/app/components/footerpost";
 import Navbarblack from "@/app/components/navbarblack";
+import Head from "next/head";
 import Link from "next/link";
 
 
 export default function Page1() {
   return (
     <>
+      <Head>Lara Alonso lara-alonso @aiadevop Blog Next.js React</Head>
       <div className="bg-black">
         <Navbarblack />
         <article className="max-w-5xl px-6 py-24 mx-auto space-y-12 bg-gray-100 text-gray-900 mt-20">

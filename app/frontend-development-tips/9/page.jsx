@@ -2,12 +2,14 @@
 import { FooterBlack } from "@/app/components/footerblack";
 import { FooterPost } from "@/app/components/footerpost";
 import Navbarblack from "@/app/components/navbarblack";
+import Head from "next/head";
 import Link from "next/link";
 
 
 export default function Page9() {
     return (
         <>
+            <Head>Lara Alonso lara-alonso @aiadevop Blog Next.js React</Head>
             <div className="bg-black">
                 <Navbarblack />
                 <article className="max-w-5xl px-6 py-24 mx-auto space-y-12 bg-gray-100 text-gray-900 mt-20">
@@ -96,8 +98,8 @@ export default function Page9() {
 
                         <div className="text-violetitle"><b>Optimización del rendimiento del lado del cliente:</b></div>
                         <br />
-                        <div>Además de las técnicas mencionadas anteriormente, es importante considerar la optimización del rendimiento del lado del cliente. 
-                         <b> Minimiza las solicitudes de red, reduce el tamaño de los archivos y optimiza los estilos y scripts </b>para lograr un mejor rendimiento.</div>
+                        <div>Además de las técnicas mencionadas anteriormente, es importante considerar la optimización del rendimiento del lado del cliente.
+                            <b> Minimiza las solicitudes de red, reduce el tamaño de los archivos y optimiza los estilos y scripts </b>para lograr un mejor rendimiento.</div>
                         <br />
 
                         <div>Si has llegado hasta aquí y quieres saber más sobre Next.js, puedes leer mi post {' '}

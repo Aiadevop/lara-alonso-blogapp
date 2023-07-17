@@ -11,6 +11,7 @@
   "dependencies": {
     "@headlessui/react": "^1.7.15",
     "@heroicons/react": "^2.0.18",
+    "@vercel/analytics": "^1.0.1",
     "autoprefixer": "10.4.14",
     "cross-env": "^7.0.3",
     "eslint": "8.41.0",

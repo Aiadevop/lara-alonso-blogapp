@@ -2,12 +2,14 @@
 import { FooterBlack } from "@/app/components/footerblack";
 import { FooterPost } from "@/app/components/footerpost";
 import Navbarblack from "@/app/components/navbarblack";
+import Head from "next/head";
 import Link from "next/link";
 
 
 export default function Page4() {
     return (
         <>
+            <Head>Lara Alonso lara-alonso @aiadevop Blog OpenAI ChatGPT</Head>
             <div className="bg-black">
                 <Navbarblack />
                 <article className="max-w-5xl px-6 py-24 mx-auto space-y-12 bg-gray-100 text-gray-900 mt-20">
@@ -63,10 +65,10 @@ export default function Page4() {
                         <br />
                         <div>Y nunca debemos olvidar generar feedback si la respuesta no encaja exactamente con lo que buscamos para perfeccionarla.</div>
                         <br />
-   
+
                         <div><b>Feedback</b></div>
                         <div><b>Me falto añadir </b> mi público objetivo. Hazme preguntas de una en una , esperando mi respuesta para hacerme la siguiente pregunta
-                         para que pudas conocer cual es mi público objetivo. </div>
+                            para que pudas conocer cual es mi público objetivo. </div>
 
 
                         <br />

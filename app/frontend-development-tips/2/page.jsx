@@ -2,6 +2,7 @@
 import { FooterBlack } from "@/app/components/footerblack";
 import { FooterPost } from "@/app/components/footerpost";
 import Navbarblack from "@/app/components/navbarblack";
+import Head from "next/head";
 import Image from "next/image";
 
 export default function Page2() {
@@ -14,6 +15,7 @@ export default function Page2() {
 
   return (
     <>
+      <Head>Lara Alonso lara-alonso @aiadevop Blog Attach VSC</Head>
       <div className="bg-black">
         <Navbarblack />
         <article className="max-w-5xl px-6 py-24 mx-auto space-y-12 bg-gray-100 text-gray-900 mt-20">
@@ -57,47 +59,47 @@ export default function Page2() {
 
             <li> Crea una nueva carpeta en la raíz del proyecto que se llame <b>.vscode</b> </li>
             <li> Dentro de esta carpeta crea un archivo <b>launch.json</b>con el siguiente código:</li>
-            <br/>
-              <div>&#123;</div>
-              <div className="ml-3">&quot;version&quot;: &quot;0.2.0&quot;, </div>
-              <div className="ml-3">  &quot;configurations&quot;: &#91;</div>
-              <div className="ml-6"> &#123;</div>
-              <div className="ml-9"> &quot;name&quot;: &quot;Launch&quot;,</div>
-              <div className="ml-9"> &quot;program&quot;: &quot;$&#123;workspaceFolder&#125;/pages/index.js&quot;,</div>
-              <div className="ml-9">        &quot;request&quot;: &quot;launch&quot;,</div>
-              <div className="ml-9">            &quot;skipFiles&quot;: [</div>
-              <div className="ml-12">                &quot; &#60;node_internals&#62;/**&quot;</div>
-              <div className="ml-9">          ],</div>
-              <div className="ml-9">            &quot;type&quot;: &quot;node&quot;</div>
-              <div className="ml-6">        &#125;,</div>
-  
-              <div className="ml-6">        &#123;</div>
-              <div className="ml-9">    &quot;name&quot;: &quot;Attach&quot;,</div>
-              <div className="ml-9">            &quot;type&quot;: &quot;node&quot;,</div>
-              <div className="ml-9">        &quot;request&quot;: &quot;attach&quot;,</div>
-              <div className="ml-9">     &quot;port&quot;: 9229</div>
-              <div className="ml-6">       &#125;</div>
-              <div className="ml-3">  	&#93;  </div>
-              <div>  &#125;</div>
+            <br />
+            <div>&#123;</div>
+            <div className="ml-3">&quot;version&quot;: &quot;0.2.0&quot;, </div>
+            <div className="ml-3">  &quot;configurations&quot;: &#91;</div>
+            <div className="ml-6"> &#123;</div>
+            <div className="ml-9"> &quot;name&quot;: &quot;Launch&quot;,</div>
+            <div className="ml-9"> &quot;program&quot;: &quot;$&#123;workspaceFolder&#125;/pages/index.js&quot;,</div>
+            <div className="ml-9">        &quot;request&quot;: &quot;launch&quot;,</div>
+            <div className="ml-9">            &quot;skipFiles&quot;: [</div>
+            <div className="ml-12">                &quot; &#60;node_internals&#62;/**&quot;</div>
+            <div className="ml-9">          ],</div>
+            <div className="ml-9">            &quot;type&quot;: &quot;node&quot;</div>
+            <div className="ml-6">        &#125;,</div>
 
-              <br/>
+            <div className="ml-6">        &#123;</div>
+            <div className="ml-9">    &quot;name&quot;: &quot;Attach&quot;,</div>
+            <div className="ml-9">            &quot;type&quot;: &quot;node&quot;,</div>
+            <div className="ml-9">        &quot;request&quot;: &quot;attach&quot;,</div>
+            <div className="ml-9">     &quot;port&quot;: 9229</div>
+            <div className="ml-6">       &#125;</div>
+            <div className="ml-3">  	&#93;  </div>
+            <div>  &#125;</div>
+
+            <br />
             <li>Instala el paquete npm i cross-env</li>
             <li>A continuación en el archivo <b>package.json</b> modifica el &quot;dev&quot; que está dentro de scripts:</li>
-            <br/>
+            <br />
             <div>  &quot;dev&quot;: &quot;cross-env NODE_OPTIONS=&#39;--inspect=0.0.0.0:9229&#39;next dev&quot;,</div>
-            <br/>
+            <br />
             <li>A partir de ahora para debuggar debes marcar un breakpoint (punto rojo en la línea de código que quieres que pare) o los que necesites. Debes ir a la opción de debugger
-             en VSC, hacer click y ya puedes ejecutar npm run dev como siempre. Si el código que estás ejecutando pasa por el breakpoint que has marcado este se detendrá y podrás ir
-             viendo como se ejecuta tu código línea a línea. 
-            </li>  
-            <br/>   
+              en VSC, hacer click y ya puedes ejecutar npm run dev como siempre. Si el código que estás ejecutando pasa por el breakpoint que has marcado este se detendrá y podrás ir
+              viendo como se ejecuta tu código línea a línea.
+            </li>
+            <br />
             <Image
               src="/icons/debugicon.png"
               width={36}
               height={36}
-              alt= "icono debugger VSC"
+              alt="icono debugger VSC"
             />
-            <br/>
+            <br />
             <div>Espero que os haya gustado 😄</div>
           </div>
           <FooterPost />

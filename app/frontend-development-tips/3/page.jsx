@@ -2,12 +2,14 @@
 import { FooterBlack } from "@/app/components/footerblack";
 import { FooterPost } from "@/app/components/footerpost";
 import Navbarblack from "@/app/components/navbarblack";
+import Head from "next/head";
 import Link from "next/link";
 
 
 export default function Page3() {
     return (
         <>
+            <Head>Lara Alonso lara-alonso @aiadevop Blog Next.js React</Head>
             <div className="bg-black">
                 <Navbarblack />
                 <article className="max-w-5xl px-6 py-24 mx-auto space-y-12 bg-gray-100 text-gray-900 mt-20">
@@ -50,9 +52,9 @@ export default function Page3() {
                             height={614.4}
                             alt="Ruta Next.js"
                         />
-                        <br/>
+                        <br />
                         <div>Si has llegado hasta aquí y no sabes aún de que va Next.js puedes leer mi post {' '}
-                        <Link href="/frontend-development-tips/1" className="underline">Crea tu primera aplicación en Next.js 13</Link></div>
+                            <Link href="/frontend-development-tips/1" className="underline">Crea tu primera aplicación en Next.js 13</Link></div>
                     </div>
                     <FooterPost />
                 </article>

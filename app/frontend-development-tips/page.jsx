@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import Navbar from '../components/navbar';
+import Head from 'next/head';
 
 
 /* eslint-disable @next/next/no-img-element */
@@ -9,6 +10,7 @@ const postreverse = posts.reverse();
 export default function Articulos() {
     return (
         <>
+            <Head>Lara Alonso lara-alonso @aiadevop Blog Next.js React OpenAI ChatGPT</Head>
             <Navbar />
             <div className="bg-white pt-8 sm:pt-20">
                 <div className="mx-auto max-w-7xl px-6 lg:px-8">
