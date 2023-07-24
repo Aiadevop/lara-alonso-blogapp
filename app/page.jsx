@@ -17,7 +17,8 @@ export default function Blog() {
     ...new Set(posts.map(post => post.category)),
   ];
 
-  const [post, setPost] = useState(posts);
+  const [post, setPost] = useState(postreverse);
+  console.log({post})
 
   const handleCategoryChange = (category) => {
 
@@ -61,7 +62,7 @@ export default function Blog() {
           <button className="text-violetitle mt-4 flex justify-start" onClick={handleCategoryClean}>Borrar filtros</button>
 
           <div className="mx-auto mt-8 grid max-w-2xl auto-rows-fr grid-cols-1 gap-8 sm:mt-20 lg:mx-0 lg:max-w-none lg:grid-cols-3">
-            {postreverse.map((post) => (
+            {post.map((post) => (
 
               <article
                 key={post.id}
