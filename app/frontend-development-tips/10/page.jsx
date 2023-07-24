@@ -30,15 +30,15 @@ export default function Page10() {
                         <div>¿Ya has creado tu aplicación de Next.js y la has subido a Vercel? Lara;  <b>pero ¿qué es Vercel?</b></div>
                         <br />
                         <div><b>Vercel</b> es una plataforma basada en la nube para sitios estáticos y funciones sin servidor que se adapta con fluidez a tu flujo de trabajo.
-                            <b>Permite a los desarrolladores alojar sitios web y servicios web que se implementan al instante, escalan automáticamente y no requieren supervisión,
+                            <b> Permite a los desarrolladores alojar sitios web y servicios web que se implementan al instante, escalan automáticamente y no requieren supervisión,
                                 todo sin necesidad de configuración.</b><br />
                             Esta plataforma permite a los equipos de front-end hacer un muy buen trabajo al combinar la experiencia de desarrollador con un enfoque obsesivo en
                             el rendimiento del usuario final.
                         </div>
                         <br />
-                        <div>Si no sabes como subir tu aplicación a Vercel, puedes consultar mi post{' '}
+                        {/* <div>Si no sabes como subir tu aplicación a Vercel, puedes consultar mi post{' '}
                             <Link href="/frontend-development-tips/1" className="underline">Como subir mi aplicación a Vercel</Link></div>
-                        <br />
+                        <br /> */}
 
                         <div className="text-violetitle"><b>Vercel Web Analytics Quickstart</b></div>
                         <br />
@@ -50,8 +50,8 @@ export default function Page10() {
 
                         <div className="flex items-center justify-center">
                             <img
-                                className="max-h-80 max-w-xl"
-                                src="https://res.cloudinary.com/dguhnftxe/image/upload/v1689611403/blog/enableanalitycs_jzkzi7.png"
+                                className="max-w-m md:max-w-2xl"
+                                src="https://res.cloudinary.com/dguhnftxe/image/upload/v1690188804/enableanalitycs2_guf5vx.png"
                                 width={819.2}
                                 height={614.4}
                                 alt="Vercel Web Analytics"
@@ -75,8 +75,8 @@ export default function Page10() {
 
                         <div className="flex items-center justify-center">
                             <img
-                                className="max-h-80 max-w-xl"
-                                src="https://res.cloudinary.com/dguhnftxe/image/upload/v1690186340/analyticslayout_qz561m.png"
+                                className="max-w-m md:max-w-2xl"
+                                src="https://res.cloudinary.com/dguhnftxe/image/upload/v1690188798/analyticslayout_zpzsto.png"
                                 width={819.2}
                                 height={614.4}
                                 alt="Vercel Web Analytics"

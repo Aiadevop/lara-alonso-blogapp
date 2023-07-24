@@ -22,7 +22,7 @@ export default function Navbarblack() {
                                     <div>
                                         <Image
                                             className="flex flex-1 items-center justify-center flex-col ml-1"
-                                            src="/icons/laralonsoround.png"
+                                            src="https://res.cloudinary.com/dguhnftxe/image/upload/v1690188790/laralonsoround_d4xtfk.png"
                                             width={65}
                                             height={65.5}
                                             alt="Lara Alonso Favicon"
