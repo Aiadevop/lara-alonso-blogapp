@@ -5,7 +5,7 @@ import { Analytics } from '@vercel/analytics/react';
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
-  title: 'Lara Alonso lara-alonso @aiadevop Blog Next.js React OpenAI ChatGPT',
+  title: 'Lara Alonso @aiadevop lara-alonso',
   description: 'Lara Alonso lara-alonso @aiadevop | Frontend Developer Portfolio Blog',
 }
 

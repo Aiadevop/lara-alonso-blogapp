@@ -134,6 +134,21 @@
             "name": "Lara Alonso",
             "imageUrl": "/img/profileIcon.png "
         }
+    },
+    {
+        "id": 10,
+        "title": "¿Quiéres saber cuántas personas visitan tu web?",
+        "href": "frontend-development-tips/10",
+        "description": "Conoce las estadísticas de visitas de tu web implementada en Vercel.",
+        "category": "Next.js",
+        "imageUrl": "https://res.cloudinary.com/dguhnftxe/image/upload/v1689609492/blog/nextanalityc_qtfpzr.png",
+        "alt": "Visitas Vercel y Next.js",
+        "date": "Lun 17 Julio 2023",
+        "datetime": "2023-07-17",
+        "author": {
+            "name": "Lara Alonso",
+            "imageUrl": "/img/profileIcon.png "
+        }
     }
 
 ]
