@@ -67,7 +67,7 @@ export default function Page1() {
             <br />
 
             <div>Si has llegado hasta aquí y quieres conocer algunas novedades de Next.js 13 puedes ir a mi post {' '}
-              <Link href="/frontend-development-tips/3" className="underline">Como crear rutas en Next.js 13</Link></div>
+              <Link href="/frontend-development-tips/3" className="text-violetitle">Como crear rutas en Next.js 13</Link></div>
           </div>
           <FooterPost />
         </article>

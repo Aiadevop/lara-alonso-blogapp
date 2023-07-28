@@ -85,7 +85,7 @@ export default function Page6() {
                         </div>
                         <br />
                         <div>Si has llegado hasta aquí y quieres saber más sobre prompts, puedes leer mi post {' '}
-                            <Link href="/frontend-development-tips/4" className="underline">Como generar prompts increíbles en ChatGPT</Link></div>
+                            <Link href="/frontend-development-tips/4" className="text-violetitle">Como generar prompts increíbles en ChatGPT</Link></div>
                     </div>
                     <FooterPost />
                 </article>

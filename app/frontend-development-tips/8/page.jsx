@@ -128,7 +128,7 @@ export default function Page8() {
 
 
                         <div>Si has llegado hasta aquí y quieres saber más sobre VSC, puedes leer mi post {' '}
-                            <Link href="/frontend-development-tips/2" className="underline">Como poner Attach como debugger en VSC</Link></div>
+                            <Link href="/frontend-development-tips/2" className="text-violetitle">Como poner Attach como debugger en VSC</Link></div>
                     </div>
                     <FooterPost />
                 </article>

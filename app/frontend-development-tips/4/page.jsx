@@ -73,7 +73,7 @@ export default function Page4() {
 
                         <br />
                         <div>Si has llegado hasta aquí y quieres saber más de ChatGPT puedes leer mi post de {' '}
-                            <Link href="/frontend-development-tips/5" className="underline">¿Por qué ChatGPT me devuelve una respuesta tan rara?</Link></div>
+                            <Link href="/frontend-development-tips/5" className="text-violetitle">¿Por qué ChatGPT me devuelve una respuesta tan rara?</Link></div>
                     </div>
                     <FooterPost />
                 </article>

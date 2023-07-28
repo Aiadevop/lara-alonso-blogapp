@@ -54,7 +54,7 @@ export default function Page3() {
                         />
                         <br />
                         <div>Si has llegado hasta aquí y no sabes aún de que va Next.js puedes leer mi post {' '}
-                            <Link href="/frontend-development-tips/1" className="underline">Crea tu primera aplicación en Next.js 13</Link></div>
+                            <Link href="/frontend-development-tips/1" className="text-violetitle">Crea tu primera aplicación en Next.js 13</Link></div>
                     </div>
                     <FooterPost />
                 </article>

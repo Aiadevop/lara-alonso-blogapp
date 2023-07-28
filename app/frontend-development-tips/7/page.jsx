@@ -114,7 +114,7 @@ export default function Page7() {
                         No he añadido los estilos para que quede más limpio el código.</div>
                     <br />
                     <p><b>Espero que os haya servido¡¡¡</b> <br />Podéis leer otros artículos de Next.js en mi blog como  {' '}
-                        <Link href="/frontend-development-tips/9" className="underline">
+                        <Link href="/frontend-development-tips/9" className="text-violetitle">
                             Cómo utilizar React y Next.js para construir sitios web de alto rendimiento</Link></p>
 
 

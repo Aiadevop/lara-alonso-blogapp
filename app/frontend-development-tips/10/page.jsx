@@ -36,14 +36,14 @@ export default function Page10() {
                             el rendimiento del usuario final.
                         </div>
                         <br />
-                        {/* <div>Si no sabes como subir tu aplicación a Vercel, puedes consultar mi post{' '}
-                            <Link href="/frontend-development-tips/1" className="underline">Como subir mi aplicación a Vercel</Link></div>
-                        <br /> */}
+                        <div>Si no sabes como subir tu aplicación a Vercel, puedes consultar mi post{' '}
+                            <Link href="/frontend-development-tips/11" className="text-violetitle">Como subir mi aplicación a Vercel</Link></div>
+                        <br />
 
                         <div className="text-violetitle"><b>Vercel Web Analytics Quickstart</b></div>
                         <br />
-                        <div>Os dejo un link dónde podéis consultar toda la documentación oficial ,
-                            <Link href="https://vercel.com/docs/concepts/analytics/quickstart" className="underline">Vercel Web Analytics Quickstart</Link></div><br />
+                        <div>Os dejo un link dónde podéis consultar toda la documentación oficial en 
+                            <Link href="https://vercel.com/docs/concepts/analytics/quickstart" className="text-violetitle"> Vercel Web Analytics Quickstart</Link></div><br />
 
                         <div><b>1- En el dashboard de Vercel debes ir a tu proyecto y seleccionar enable en el menú Analitycs</b></div>
                         <br />
@@ -89,7 +89,7 @@ export default function Page10() {
                         
 
                         <div>Si has llegado hasta aquí y quieres saber más sobre Next.js, puedes leer mi post {' '}
-                            <Link href="/frontend-development-tips/1" className="underline">Crea tu primera aplicación en Next.js 13</Link></div>
+                            <Link href="/frontend-development-tips/1" className="text-violetitle">Crea tu primera aplicación en Next.js 13</Link></div>
                     </div>
                     <FooterPost />
                 </article>

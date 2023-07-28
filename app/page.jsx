@@ -18,7 +18,7 @@ export default function Blog() {
   ];
 
   const [post, setPost] = useState(postreverse);
-  console.log({post})
+  // console.log({post})
 
   const handleCategoryChange = (category) => {
 

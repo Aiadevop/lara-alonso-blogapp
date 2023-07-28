@@ -104,7 +104,7 @@
             "name": "Lara Alonso",
             "imageUrl": "/img/profileIcon.png "
         }
-    },   
+    },
     {
         "id": 8,
         "title": "Mejora tu Visual Studio Code (VSC) con estas extensiones",
@@ -149,6 +149,20 @@
             "name": "Lara Alonso",
             "imageUrl": "/img/profileIcon.png "
         }
+    },
+    {
+        "id": 11,
+        "title": "Como subir mi aplicación a Vercel",
+        "href": "frontend-development-tips/11",
+        "description": "Has creado una aplicación Next.js y quieres subirla a Vercel.",
+        "category": "Next.js",
+        "imageUrl": "https://res.cloudinary.com/dguhnftxe/image/upload/v1690527581/blog/postVercel_gfojpb.png",
+        "alt": "Subir aplicación a Vercel con Next.js",
+        "date": "Lun 28 Julio 2023",
+        "datetime": "2023-07-28",
+        "author": {
+            "name": "Lara Alonso",
+            "imageUrl": "/img/profileIcon.png "
+        }
     }
-
 ]
