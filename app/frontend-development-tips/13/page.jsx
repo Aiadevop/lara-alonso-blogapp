@@ -19,74 +19,56 @@ export default function Page13() {
                             <a rel="noopener noreferrer" href="#" target="_blank" className="underline text-violet-400">
                                 <span itemProp="name">Lara Alonso</span>
                             </a>
-                            <time dateTime="2023-07-10 ">{' '}07/08/2023</time>
+                            <time dateTime="2023-07-10 ">{' '}08/08/2023</time>
                         </div>
                     </div>
-                    <div><b className="text-xl text-violetitle">¿Hay fotos que tenías en tus carpetas locales que no aparecen en producción?
+                    <div><b className="text-xl text-violetitle">¿Hay fotos que podías ver en desarrollo que no aparecen en producción?
                         No sabes como mejorar el rendimiento de las fotos tu web. Aquí te explico como hacerlo. </b></div>
 
 
                     <div className="text-gray-900">
-                        <div>Lo primero que debes</div>
+                        <div>- Lo primero que debes hacer es asegurarte de que <b>el peso y el tamaño de tus fotos es el adecuado.</b></div>
                         <br />
-                        <div className="pb-2">
-                            <ol className="px-4 py-1">1- Introduce el nombre de tu web en el buscador de Google. Por ejemplo www.lara-alonso.com.
-                                <br />
-                                Si no aparece, atent@¡
-                            </ol>
-
-                            <ol className="px-4 py-1">2- Google dispone de una herramienta para poder introducir tu web en sus buscadores:
-                                <b><Link className="text-violetitle" href="https://search.google.com/search-console/about">
-                                    Google Search Console </Link></b></ol>
-                            <div className="flex items-center justify-center py-3">
-                                <img
-                                    className="max-w-m md:max-w-2xl"
-                                    src="https://res.cloudinary.com/dguhnftxe/image/upload/v1691132410/blog/dominio_u51xqe.png"
-                                    width={369.2}
-                                    height={164.4}
-                                    alt="Google Search Console"
-                                />
-                            </div>
-
-                            <ol className="px-4 py-1">3- El problema está en que si subiste tu web a Vercel, has obtenido un subdominio de Vercel. ¿Y ésto que quiere decir?.
-                                Pues que tu no puedes manejar ese dominio. Por lo que para poder aparecer en Google <b>tendrás que comprar un dominio propio.</b> </ol>
-
-                            <ol className="px-4 py-1">4- En la herramienta de Google Search Console, introduces el nombre de tu dominio. A continuación te generará un
-                                <b> código de verificación de propiedad de ese dominio</b>, que tendrás que introducir en el panel de control de tu dominio.</ol>
-                            <div className="flex items-center justify-center py-3">
-                                <img
-                                    className="max-w-m md:max-w-2xl"
-                                    src="https://res.cloudinary.com/dguhnftxe/image/upload/v1691132746/blog/verificacion_ccy0g4.png"
-                                    width={369.2}
-                                    height={164.4}
-                                    alt="Vercel Web Analytics"
-                                />
-                            </div>
-                            <ol className="px-4 py-1">5- En mi caso, el dominio lo compré en <b><Link className="text-violetitle" href="https://www.hostinger.es/?ppc_campaign=google_search_brand&bidkw=hostinger&gclid=CjwKCAjww7KmBhAyEiwA5-PUSoqdPu4BSK-ovNMPwDmbouwd-N_7QzA3vWl2OM0d01P51E0jQi0A5BoC_uUQAvD_BwE">
-                                Hostinger </Link></b> pero hay muchos proveedores de dominios. No es necesario que compres el hosting ya que tu web, puede seguir alojada en Vercel.
-                                En la parte inferior te permite agregar ese enlace TXT que te proporciona Google.</ol>
-                            <div className="flex items-center justify-center py-3">
-                                <img
-                                    className="max-w-m md:max-w-2xl"
-                                    src="https://res.cloudinary.com/dguhnftxe/image/upload/v1691133486/blog/hostinger_yt8hx8.png"
-                                    width={569.2}
-                                    height={164.4}
-                                    alt="Vercel Web Analytics"
-                                />
-                            </div>
-
-                            <ol className="px-4 py-1">6- Cuando compras tu dominio te pregunta si quieres importar o asociarlo a algún otro dominio. En este caso lo asociarías
-                                al subdominio de Vercel. Si has comprado el Hosting podrías importarlo también a Hostinger. Si no lo haces, simplemente tienes que importar desde
-                                Vercel tres enlaces para establecer la conexión de los dos dominios.</ol>
+                        <div className="pb-4">
+                            <ol className="px-4 py-1">El tamaño de una foto no debe exceder los 100kb para que la carga de la imagen esté optimizado.</ol>
+                            <ol className="px-4 py-1">Para esto con herramientas como Photoshop puedes exportar tu foto para web y simplemente ajustando
+                                el tamaño y guardándolo en PNG conseguir reducir el peso. </ol>
+                            <ol className="px-4 py-1">Hay otras herramientas online gratuitas como 
+                            <b className="text-violetitle"><Link href="https://www.iloveimg.com/es">I love IMG </Link></b>
+                                que te permiten optimizar tus imágenes.</ol>
                         </div>
                         <br />
-                        <div><b>¡Listo, ya formas parte de Google!</b>  Hay opciones de Google que tardarán un tiempo en estar disponibles, lo podrás gestionar todo desde el panel
-                            de control de Google Search Console.
+                        <div>- Cuando ya están optimizadas nuestras imágenes podemos buscar un<b> alojamiento en la nube </b>para ellas.</div>
+                        <br />
+                        <div className="pb-4">
+                            <ol className="px-4 py-1">Personalmente a mi me gusta trabajar con
+                            <b className="text-violetitle"><Link href="https://cloudinary.com/"> Cloudinary </Link></b>
+                            .</ol>
+                            <ol className="px-4 py-1">Simplemente arrastrando tus fotos a una carpeta te genera una url con la que establecer
+                            una ruta en tu código </ol>                      
+                        </div>
+                        <br />
+                        <div className="flex items-center justify-center py-3">
+                            <img
+                                className="max-w-m md:max-w-2xl"
+                                src="https://res.cloudinary.com/dguhnftxe/image/upload/v1691480391/blog/cloudinary_qegeyv.png"
+                                width={868}
+                                height={526}
+                                alt="Cloudinary"
+                            />
+                        </div>
+                        <br/>
+                        <div className="pb-4">- De esta forma siempre aparecerán tus fotos cargadas en producción sin errores y no generarás 
+                            un peso mayor en tu web.                                     
+                        </div>
+
+                        <br />
+                        <div><b>¡Listo, ya sabes dónde guardar tus imágenes!</b> 
                         </div>
                         <br />
 
-                        <div>Si has llegado hasta aquí y quieres saber quién visita tu web, puedes leer mi post {' '}
-                            <Link href="/frontend-development-tips/10" className="text-violetitle">¿Quiéres saber cuántas personas visitan tu web?</Link></div>
+                        <div>Si has llegado hasta aquí y quieres saber como aparecer en los rastreadores de Google, puedes leer mi post {' '}
+                            <b><Link href="/frontend-development-tips/12" className="text-violetitle">Mi web no aparece en Google !!! 🙀</Link></b></div>
                     </div>
                     <FooterPost />
                 </article>
