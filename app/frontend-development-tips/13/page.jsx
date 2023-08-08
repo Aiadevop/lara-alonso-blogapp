@@ -34,7 +34,7 @@ export default function Page13() {
                             <ol className="px-4 py-1">Para esto con herramientas como Photoshop puedes exportar tu foto para web y simplemente ajustando
                                 el tamaño y guardándolo en PNG conseguir reducir el peso. </ol>
                             <ol className="px-4 py-1">Hay otras herramientas online gratuitas como 
-                            <b className="text-violetitle"><Link href="https://www.iloveimg.com/es">I love IMG </Link></b>
+                            <b className="text-violetitle"><Link href="https://www.iloveimg.com/es"> I love IMG </Link></b>
                                 que te permiten optimizar tus imágenes.</ol>
                         </div>
                         <br />
