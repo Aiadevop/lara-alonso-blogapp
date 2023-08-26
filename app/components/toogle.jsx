@@ -168,17 +168,21 @@ export default function Toogle() {
                         <div className="lg:flex mx-auto max-w-5xl px-6 flex-row justify-between items-center mb-4">
                             <pre className={classNames(!enabled ? "bg-black text-white text-lg rounded-md w-full" : "bg-slate-700 text-white text-lg rounded-md w-full")}><code>
                                 <br />
-                                <div className="ml-4">&#8249; div className=classNames( !enabled ? &#34;bg-black&#34; : &#34;bg-fuchsia-900&#34; )&#125; &#8250;</div>
+                                <div className="ml-4">&#8249; div className=classNames(</div>
+                                <div className="ml-8">!enabled</div>
+                                <div className="ml-8">? &#34;bg-black&#34;</div>
+                                <div className="ml-8">: &#34;bg-fuchsia-900&#34; )</div>
+                                <div className="ml-4">&#125; &#8250;</div>   
                                 <br />
                             </code></pre>
                         </div>
                         <br />
                         <div>Podrías añadir el modo oscuro a toda tu web, configurando un tema de Tailwind.css, te dejo un
                             <b><Link href="https://gabrielsule.hashnode.dev/creando-dark-mode-en-react-con-tailwind"
-                                className={classNames(!enabled ? "text-sm text-violetitle" : "text-sm text-fuchsia-300")}> enlace </Link></b> para que podáis ver como hacerlo.
+                                className={classNames(!enabled ? "text-sm text-violetitle" : "text-sm text-fuchsia-300")}> enlace </Link></b> para que puedas ver como hacerlo.
                         </div>
-                                
-                        <br/>
+
+                        <br />
 
                         <div>Listo ¡¡¡¡¡ Si has llegado hasta aquí y quieres saber como añadir filtros a tu Blog creado en Next.js o React puedes leer  {' '}
                             <b><Link href="/frontend-development-tips/7" className={classNames(!enabled ? "text-sm text-violetitle" : "text-sm text-fuchsia-300")}> mi post</Link></b></div>
