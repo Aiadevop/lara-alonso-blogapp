@@ -97,7 +97,7 @@ export default function Toogle() {
                             <br />
                         </div>
                         <div className="lg:hidden ml-5 mt-5 mb-4">Tienes todo <b>el código</b> en este
-                            <b><Link href="https://heroicons.com/" className={classNames(!enabled ? "text-sm text-violetitle" : "text-sm text-fuchsia-300")}> enlace.</Link></b></div>
+                            <b><Link href="https://github.com/Aiadevop/lara-alonso-blogapp/blob/main/app/components/toogle.jsx" className={classNames(!enabled ? "text-sm text-violetitle" : "text-sm text-fuchsia-300")}> enlace.</Link></b></div>
                         <div className="hidden lg:flex mx-auto max-w-5xl px-6 flex-row justify-between items-center mb-4">
                             <pre className={classNames(!enabled ? "bg-black text-white text-lg rounded-md" : "bg-slate-700 text-white text-lg rounded-md")}><code>
                                 <br />
