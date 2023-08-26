@@ -212,14 +212,14 @@
     },
     {
         "id": 15,
-        "title": "Como hacer un modo oscuro con Tailwind.css",
+        "title": "Modo oscuro con Tailwind.css en una sola página de tu web",
         "href": "frontend-development-tips/15",
         "description": "¿Pero, para qué quiero yo incluir en mi web un tema oscuro? Aquí tienes tu respuesta.",
-        "category": "Tailwind",
-        "imageUrl": "https://res.cloudinary.com/dguhnftxe/image/upload/v1691746051/blog/map_mwu9o3.png",
+        "category": "Otros",
+        "imageUrl": "https://res.cloudinary.com/dguhnftxe/image/upload/v1693044555/blog/moon3_sghxf8.png",
         "alt": "Tema oscuro con Tailwind.css",
-        "date": "Lun 25 Agosto 2023",
-        "datetime": "2023-08-25",
+        "date": "Lun 26 Agosto 2023",
+        "datetime": "2023-08-26",
         "author": {
             "name": "Lara Alonso",
             "imageUrl": "/img/profileIcon.png "
