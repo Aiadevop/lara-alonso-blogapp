@@ -11,6 +11,8 @@ const posts = require('../app/post.json');
 const postreverse = posts.reverse();
 
 
+
+
 export default function Blog() {
 
   const allCategories = [
@@ -18,6 +20,7 @@ export default function Blog() {
   ];
 
   const [post, setPost] = useState(postreverse);
+  const [selectedCategory, setSelectedCategory] = useState(null);
   // console.log({post})
 
   const handleCategoryChange = (category) => {
@@ -25,10 +28,12 @@ export default function Blog() {
     setPost(posts.filter((post) => {
       return post.category === category;
     }))
+    setSelectedCategory(category);
   };
 
   const handleCategoryClean = () => {
     setPost(posts);
+    setSelectedCategory(null);
   };
 
   return (
@@ -51,7 +56,13 @@ export default function Blog() {
             {allCategories.map(category => (
               <button
                 type='button'
-                className="rounded-2xl bg-violetitle px-2 pb-2 pt-2 flex text-white justify-center"
+                className={`rounded-2xl  px-2 pb-2 pt-2 flex  justify-center 
+               
+                ${selectedCategory === category ? 
+                  'bg-slate-200 border-b-2 border-violetitle text-violetitle' 
+                  :
+                   'bg-violetitle text-white  hover:bg-slate-50 hover:border-b-2 hover:border-violetitle hover:text-violetitle '
+                }`}
                 onClick={() => handleCategoryChange(category)}
                 key={category}
               >
@@ -59,7 +70,7 @@ export default function Blog() {
               </button>
             ))}
           </div>
-          <button className="text-violetitle mt-4 flex justify-start" onClick={handleCategoryClean}>Borrar filtros</button>
+          <button className="text-violetitle mt-4 flex justify-start hover:underline hover:underline-offset-4" onClick={handleCategoryClean}>Borrar filtros</button>
 
           <div className="mx-auto mt-8 grid max-w-2xl auto-rows-fr grid-cols-1 gap-8 sm:mt-20 lg:mx-0 lg:max-w-none lg:grid-cols-3">
             {post.map((post) => (
