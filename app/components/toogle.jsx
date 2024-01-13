@@ -7,6 +7,7 @@ import Navbarblack from './navbarblack'
 import Link from 'next/link'
 import { FooterPost } from './footerpost'
 import { FooterBlack } from './footerblack'
+import { ButtonToogle } from './buttonToogle'
 
 function classNames(...classes) {
     return classes.filter(Boolean).join(' ')
@@ -25,40 +26,8 @@ export default function Toogle() {
                         ?
                         "max-w-5xl px-6 py-24 mx-auto space-y-12 bg-gray-100 text-gray-900 mt-20 rounded-md"
                         :
-                        "max-w-5xl px-6 py-24 mx-auto space-y-12 text-gray-100 bg-gray-800 mt-20 rounded-md")}>
-                    <div className="container-switch text-end">
-                        <div className='flex justify-end gap-1'>
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-6 h-6">
-                                <path strokeLinecap="round" strokeLinejoin="round" d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z" />
-                            </svg>
-
-                            <Switch
-                                id="toogle"
-                                checked={enabled}
-                                onChange={setEnabled}
-                                className={classNames(
-                                    enabled ? 'bg-indigo-600' : 'bg-gray-200',
-                                    'relative inline-flex h-6 w-11 flex-shrink-0 cursor-pointer rounded-full border-2 border-transparent transition-colors duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-indigo-600 focus:ring-offset-2'
-                                )}
-                            >
-                                <span className="sr-only">Use setting</span>
-                                <span
-                                    aria-hidden="true"
-                                    className={classNames(
-                                        enabled ? 'translate-x-5' : 'translate-x-0',
-                                        'pointer-events-none inline-block h-5 w-5 transform rounded-full bg-white shadow ring-0 transition duration-200 ease-in-out'
-                                    )}
-                                />
-                            </Switch>
-
-
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-6 h-6">
-                                <path strokeLinecap="round" strokeLinejoin="round" d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z" />
-                            </svg>
-                        </div>
-
-
-                    </div>
+                        "max-w-5xl px-6 py-24 mx-auto space-y-12 text-gray-100 bg-gray-800 mt-20 rounded-md")}>                
+                    <ButtonToogle enabled={enabled} setEnabled={setEnabled} classNames={classNames} />
                     <div className="w-full mx-auto space-y-4 text-center">
                         <h1 className="text-4xl font-bold leadi md:text-5xl">Como hacer un modo oscuro con Tailwind.css, Next.js y React en una sola página.</h1>
                         <div className={classNames(!enabled ? "text-sm text-gray-400" : "text-sm text-gray-100")}>by {' '}
@@ -77,7 +46,7 @@ export default function Toogle() {
                             en tema oscuro, resultando muy molesto visitar páginas que no respeten este esquema de colores por el alto contraste entre unas y otras
                             páginas.</div>
                         <br />
-                        <div><b>Lo primero, debes crear el Toogle para elegir el modo oscuro 🌙  o claro 🌞</b></div>
+                        <div className='flex gap-5'><b>Lo primero, debes crear el Toogle para elegir el modo oscuro o claro </b> <ButtonToogle enabled={enabled} setEnabled={setEnabled} classNames={classNames} /></div>
                         <br />
 
                         <div><u>Recuerda que este proyecto está hecho en Next.js con React.</u> Y ¿por qué me dices esto?

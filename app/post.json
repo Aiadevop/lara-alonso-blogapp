@@ -224,6 +224,21 @@
             "name": "Lara Alonso",
             "imageUrl": "/img/profileIcon.png "
         }
+    },
+    {
+        "id": 16,
+        "title": "Botón para añadir eventos al calendario de Google",
+        "href": "frontend-development-tips/16",
+        "description": "Tengo mi propia agenda de eventos; pero me gustaría que mis clientes lo incluyeran en su calendario de Google. ¿Cómo puedo hacer eso?",
+        "category": "Google",
+        "imageUrl": "https://res.cloudinary.com/nodefacebook/image/upload/v1705158521/blogapp/calendar3_eqpolo.jpg",
+        "alt": "Botón enlace Google Calendar",
+        "date": "Dom 14 Enero 2024",
+        "datetime": "2024-01-14",
+        "author": {
+            "name": "Lara Alonso",
+            "imageUrl": "/img/profileIcon.png "
+        }
     }
 
 ]

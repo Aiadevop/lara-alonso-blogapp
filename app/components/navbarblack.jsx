@@ -16,17 +16,18 @@ export default function Navbarblack() {
             {({ open }) => (
                 <>
                     <div className="p-2 mx-auto h-0 max-w-7xl px-2 sm:px-6 lg:px-8 pb-20">
-                        <div className="relative flex h-18 justify-center">                       
+                        <div className="relative flex h-18 justify-center">
                             <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-center ">
-                                <div className="bg-white sm:ml-6 flex sm:space-x-8 border-4 rounded-full  shadow-lg px-4 py-2">                                 
+                                <div className="bg-white sm:ml-6 flex sm:space-x-8 border-4 rounded-full  shadow-lg px-4 py-2">
                                     <div>
-                                        <Image
-                                            className="flex flex-1 items-center justify-center flex-col ml-1"
-                                            src="https://res.cloudinary.com/dguhnftxe/image/upload/v1690188790/laralonsoround_d4xtfk.png"
-                                            width={65}
-                                            height={65.5}
-                                            alt="Lara Alonso Favicon"
-                                        />
+                                        <Link href="/">
+                                            <Image
+                                                className="flex flex-1 items-center justify-center flex-col ml-1"
+                                                src="https://res.cloudinary.com/dguhnftxe/image/upload/v1690188790/laralonsoround_d4xtfk.png"
+                                                width={65}
+                                                height={65.5}
+                                                alt="Lara Alonso Favicon"
+                                            /></Link>
                                     </div>
                                     <div className="sm:flex flex-1 items-center justify-center flex-col ml-1 hidden">
                                         <Link href="https://github.com/Aiadevop/">
@@ -57,7 +58,7 @@ export default function Navbarblack() {
                                     </div>
                                 </div>
                             </div>
-                            <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">                               
+                            <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
                             </div>
                         </div>
                     </div>
