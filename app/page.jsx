@@ -52,16 +52,16 @@ export default function Blog() {
             </p>
           </div>
 
-          <div className="mx-auto grid max-w-2xl justify-start auto-rows-fr grid-cols-4 gap-2 mt-10 lg:mx-0 lg:max-w-none lg:grid-cols-10">
+          <div className="flex flex-wrap md:flex-row gap-5 pt-10 justify-center">
             {allCategories.map(category => (
               <button
                 type='button'
-                className={`rounded-2xl  px-2 pb-2 pt-2 flex  justify-center 
+                className={`w-20 h-20 items-center p-5 flex  justify-center rounded-full 
                
                 ${selectedCategory === category ? 
                   'bg-slate-200 border-b-2 border-violetitle text-violetitle' 
                   :
-                   'bg-violetitle text-white  hover:bg-slate-50 hover:border-b-2 hover:border-violetitle hover:text-violetitle '
+                   'bg-violetitle text-white  hover:bg-purple-200 hover:border-b-2 hover:border-violetitle hover:text-violetitle '
                 }`}
                 onClick={() => handleCategoryChange(category)}
                 key={category}
