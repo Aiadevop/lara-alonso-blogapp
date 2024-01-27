@@ -12,8 +12,9 @@ const postreverse = posts.reverse();
 
 
 
-
 export default function Blog() {
+
+  const [clickedButton, setClickedButton] = useState(null);
 
   const allCategories = [
     ...new Set(posts.map(post => post.category)),
@@ -24,6 +25,11 @@ export default function Blog() {
   // console.log({post})
 
   const handleCategoryChange = (category) => {
+    setClickedButton(category);
+
+    setTimeout(() => {
+      setClickedButton(null);
+    }, 250);
 
     setPost(posts.filter((post) => {
       return post.category === category;
@@ -56,13 +62,9 @@ export default function Blog() {
             {allCategories.map(category => (
               <button
                 type='button'
-                className={`w-20 h-20 items-center p-5 flex  justify-center rounded-full 
-               
-                ${selectedCategory === category ? 
-                  'bg-slate-200 border-b-2 border-violetitle text-violetitle' 
-                  :
-                   'bg-violetitle text-white  hover:bg-purple-200 hover:border-b-2 hover:border-violetitle hover:text-violetitle '
-                }`}
+                className={`my-button w-20 h-20 items-center p-5 flex justify-center rounded-full 
+        ${selectedCategory === category ? 'bg-slate-200 border-b-2 xborder-violetitle text-violetitle' : 'bg-violetitle text-white hover:bg-purple-200 hover:border-b-2 hover:border-slate-200 hover:text-violetitle '}
+        ${clickedButton === category ? 'translate-y-1 scale-110 shadow-lg' : ''} transition duration-300 ease-in-out`}
                 onClick={() => handleCategoryChange(category)}
                 key={category}
               >
