@@ -8,9 +8,9 @@ function classNames(...classes) {
     return classes.filter(Boolean).join(' ')
 }
 
-export default function Navbar() {
+export default function Navbarinicio() {
     return (
-        <Disclosure as="nav" className="xbg-white shadow">
+        <Disclosure as="nav" className="bg-white shadow">
             {({ open }) => (
                 <>
                     <div className="p-2 mx-auto h-0 max-w-7xl px-2 sm:px-6 lg:px-8 pb-20">

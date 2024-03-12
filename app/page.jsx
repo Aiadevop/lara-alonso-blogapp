@@ -4,7 +4,7 @@ import { Footer } from "./components/footer"
 import Link from "next/link"
 import { useState } from "react";
 import Head from "next/head";
-import Navbar from "./components/navbar";
+import Navbarinicio from "./components/navbarinicio";
 
 
 const posts = require('../app/post.json');
@@ -57,7 +57,7 @@ export default function Blog() {
       <Head>
         <title>Lara Alonso lara-alonso vercel app @aiadevop </title>
       </Head>
-      <Navbar />
+      <Navbarinicio />
       <div className="group block flex-shrink-0" />
       <div className="bg-white py-24 sm:py-32">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
