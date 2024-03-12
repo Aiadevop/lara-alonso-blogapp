@@ -7,7 +7,7 @@ import Navbarblack from "../components/navbarblack";
 import ArrowSlide from "../components/arrowslide";
 import ArrowBack from "../components/arrowback";
 import { Underlineup } from "../components/underlineup";
-import { LetterDance } from "../components/letterDance";
+import { LetterDance } from "../components/letterdance";
 
 
 
