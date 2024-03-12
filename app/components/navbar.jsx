@@ -1,6 +1,6 @@
 "use client"
 
-import { Disclosure } from '@headlessui/react'
+import { Disclosure, Menu, Transition } from '@headlessui/react'
 import Image from 'next/image'
 import Link from 'next/link'
 
@@ -10,7 +10,6 @@ function classNames(...classes) {
 
 export default function Navbar() {
     return (
-
         <Disclosure as="nav" className="bg-white shadow">
             {({ open }) => (
                 <>

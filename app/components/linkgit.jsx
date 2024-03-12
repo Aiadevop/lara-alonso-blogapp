@@ -14,7 +14,7 @@ export const Linkgit = () => {
         <>
             <Link href="https://www.linkedin.com/in/lara-alonso/">
                 <Image
-                    src={isHovered1 ? "/icons/linkedinhover.png" : "/icons/linkedin.png"}
+                    src={isHovered1 ? "/icons/linkedinhoverblack.png" : "/icons/linkedinblack.png"}
                     width={36}
                     height={36}
                     alt="github icon"
@@ -25,7 +25,7 @@ export const Linkgit = () => {
             </Link>
             <Link href="https://github.com/Aiadevop?tab=repositories">
             <Image
-                    src={isHovered2 ? "/icons/githubhover.png" : "/icons/githubig.png"}
+                    src={isHovered2 ? "/icons/githubhoverblack.png" : "/icons/githubigblack.png"}
                     width={36}
                     height={36}
                     alt="github icon"
@@ -36,7 +36,7 @@ export const Linkgit = () => {
           </Link>
             <Link href="https://aiadevop.github.io/CV/">
             <Image
-                    src={isHovered3 ? "/icons/resume.png" : "/icons/resume.png"}
+                    src={isHovered3 ? "/icons/resumehoverblack.png" : "/icons/resumeblack.png"}
                     width={36}
                     height={36}
                     alt="github icon"

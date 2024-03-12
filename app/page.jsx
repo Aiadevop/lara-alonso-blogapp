@@ -1,10 +1,10 @@
 /* eslint-disable @next/next/no-img-element */
 'use client'
-import Navbar from "./components/navbar"
 import { Footer } from "./components/footer"
 import Link from "next/link"
 import { useState } from "react";
 import Head from "next/head";
+import Navbar from "./components/navbar";
 
 
 const posts = require('../app/post.json');

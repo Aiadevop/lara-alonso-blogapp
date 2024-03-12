@@ -25,12 +25,9 @@ const navigation = {
 export const FooterBlack = () => {
     return (
         <>
-            <footer className="bg-black text-white" aria-labelledby="footer-heading">
-
-                <div className="mx-auto max-w-7xl px-6 pb-8 pt-16 sm:pt-24 lg:px-8 lg:pt-1">
-
-
-                    <div className="mt-1 border-t border-gray-900/10 pt-8 md:flex md:items-center md:justify-between">
+            <footer className="bg-[#D9D9D7] text-black" aria-labelledby="footer-heading">
+                <div className="mx-auto max-w-7xl px-6 pb-8 pt-8 sm:pt-24 lg:px-8 lg:pt-1">
+                    <div className="mt-1 border-t border-gray-900/10 pt-3 md:flex md:items-center md:justify-between">
                         <div className="flex space-x-6 md:order-2">
                             {navigation.social.map((item) => (
                                 <div key={item.name} href={item.href} className="text-gray-400 hover:text-gray-500">
@@ -47,7 +44,7 @@ export const FooterBlack = () => {
                     </div>
                 </div>
             </footer>
-            <Link href="/atribuciones"><div className='bg-black text-gray-300 pt-8 text-xs leading-5 text-gray-500 md:order-1 md:mt-0 pl-8 pb-8'>Gracias a todos los que han colaborado en este blog</div></Link> 
+            <Link href="/atribuciones"><div className='bg-[#D9D9D7]  pt-8 text-xs leading-5 text-gray-400 md:order-1 md:mt-0 pl-8 pb-8'>Gracias a todos los que han colaborado en este blog</div></Link> 
         </>
     )
 }

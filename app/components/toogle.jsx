@@ -3,7 +3,7 @@ import { useState } from 'react'
 
 import { Switch } from '@headlessui/react'
 import Head from 'next/head'
-import Navbarblack from './navbarblack'
+import Navbarblack from './navbar'
 import Link from 'next/link'
 import { FooterPost } from './footerpost'
 import { FooterBlack } from './footerblack'

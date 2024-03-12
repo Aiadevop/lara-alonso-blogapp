@@ -24,10 +24,261 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
- 
 }
 
-body p{
+body p {
   margin-top: 0;
 }
 
+@layer utilities {
+  .bg-custom1 {
+    background-image: url("https://res.cloudinary.com/nodefacebook/image/upload/v1707993155/blogapp/pexels-malidate-van-784633_leyuto.jpg");
+  }
+  .bg-custom2 {
+    background-image: url("https://res.cloudinary.com/nodefacebook/image/upload/v1707993155/blogapp/pexels-rene-strgar-10406184_nrz4qv.jpg");
+  }
+  .bg-custom3 {
+    background-image: url("https://res.cloudinary.com/nodefacebook/image/upload/v1707993155/blogapp/pexels-ana-madeleine-uribe-2762942_e4rdam.jpg");
+  }
+  /* Clases para flechas */
+
+  /*Flecha sobre texto*/
+  .btn-container .btn-flecha,
+  .btn-container p {
+    position: relative;
+    background-color: $color-secundario;
+    margin-left: 14px;
+  }
+
+  .btn-container p {
+    max-width: fit-content;
+  }
+
+  #qbe-buscar {
+    padding: 0px;
+  }
+
+  .btn-container .btn-flecha::before,
+  .btn-container p::before {
+    position: absolute;
+    color: $color-principal !important;
+    border: none !important;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='7.557' height='11.5' viewBox='0 0 7.557 11.5'%3E%3Cg id='Aspa' transform='translate(0 11.5) rotate(-90)'%3E%3Cpath id='Trazado_2' data-name='Trazado 2' d='M0,0H1.108L6,6.485,10.387,0H11.5L6.3,7.557H5.681Z' fill='black'/%3E%3C/g%3E%3C/svg%3E");
+    content: "";
+    display: inline-block;
+    left: -14px;
+    top: 36.5px;
+    height: 96px;
+    width: 15px;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .btn-container p::before {
+    left: 0px;
+  }
+
+  .center {
+    justify-content: center;
+  }
+
+  .btn-container:hover .btn-flecha,
+  .btn-container:hover p {
+    position: relative;
+    background-color: $color-secundario;
+    margin-left: 14px;
+  }
+
+  .btn-container:hover .btn-flecha::before,
+  .btn-container:hover p::before {
+    animation: animacionFlecha 0.1s linear forwards;
+  }
+
+  @keyframes animacionFlecha {
+    from {
+      left: auto;
+      right: 80px;
+    }
+    to {
+      left: auto;
+      right: -30px;
+    }
+  }
+
+  .btn-container:hover .btn-flecha::after,
+  .btn-container:hover p::after {
+    position: absolute;
+    gap: 10px;
+    background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='utf-8'%3F%3E%3C!-- Generator: $$$/GeneralStr/196=Adobe Illustrator 27.6.0, SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3E%3Csvg version='1.1' id='Layer_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 21.1 11.5' style='enable-background:new 0 0 21.1 11.5;' xml:space='preserve'%3E%3Cstyle type='text/css'%3E .st0%7Bfill:none;stroke:black;%7D%0A%3C/style%3E%3Cline id='Línea_184' class='st0' x1='21.1' y1='5.8' x2='0' y2='5.8'/%3E%3C/svg%3E%0A");
+
+    background-repeat: no-repeat;
+    content: "";
+    top: 41px;
+    right: -28px;
+    height: 16px;
+    width: 24px;
+  }
+
+  .btn-container:hover .p:after {
+    top: 17px;
+  }
+
+  .center::before {
+    margin-left: 30px;
+  }
+}
+
+.snake {
+  animation-duration: 2s;
+  animation-name: bounceDown;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+.snake1 {
+  animation-duration: 2s;
+  animation-name: bounceDown1;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+.snake2 {
+  animation-duration: 2s;
+  animation-name: bounceDown2;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+.snake3 {
+  animation-duration: 2s;
+  animation-name: bounceDown3;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+.snake4{
+  animation-duration: 2s;
+  animation-name: bounceDown4;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+.snakebounce {
+  animation-duration: 2s;
+  animation-name: bounce;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+.underlineup{
+  animation-duration: 2s;
+  animation-name: under;
+  animation-iteration-count: infinite;
+}
+
+@keyframes bounce {
+  from {
+    margin-left: 0%;
+  }
+
+  to {
+    color: #942400;
+    margin-left: -3%;
+  }
+}
+
+
+
+@keyframes bounceDown {
+  0%,40%, 100% {
+    margin-top: 0px; 
+  }
+  20% {
+    color:#CDB394;
+    margin-top:10px; 
+  }
+  60% {
+    color:#784624;
+    margin-top:-10px;
+  }
+  80% {
+    color:#942400;
+    margin-top:0px;
+  }
+}
+@keyframes bounceDown1 {
+  0%,40%, 100% {
+    margin-top: 0px; 
+  }
+  20% {
+    color:#CDB394;
+    margin-top:8px; 
+  }
+  60% {
+    color:#784624;
+    margin-top:-8px;
+  }
+  80% {
+    color:#942400;
+    margin-top:0px;
+  }
+}
+@keyframes bounceDown2 {
+  0%,40%, 100% {
+    margin-top: 0px; 
+  }
+  20% {
+    color:#CDB394;
+    margin-top:6px; 
+  }
+  60% {
+    color:#784624;
+    margin-top:-6px;
+  }
+  80% {
+    color:#942400;
+    margin-top:0px;
+  }
+}
+@keyframes bounceDown3 {
+  0%,40%, 100% {
+    margin-top: 0px; 
+  }
+  20% {
+    color:#CDB394;
+    margin-top:4px; 
+  }
+  60% {
+    color:#784624;
+    margin-top:-4px;
+  }
+  80% {
+    color:#942400;
+    margin-top:0px;
+  }
+}
+@keyframes bounceDown4 {
+  0%,40%, 100% {
+    margin-top: 0px; 
+  }
+  20% {
+    color:#CDB394;
+    margin-top:2px; 
+  }
+  60% {
+    color:#784624;
+    margin-top:-2px;
+  }
+  80% {
+    color:#942400;
+    margin-top:0px;
+  }
+}
+
+@keyframes under{
+  from {
+    text-decoration:underline;
+    text-underline-offset:15px;
+    text-decoration-thickness:2px;
+  }
+
+  to {
+    text-decoration:underline;
+    text-decoration-thickness:2px;
+    text-underline-offset:5px;
+  }
+}
