@@ -6,10 +6,7 @@ export const Underlineup = (props) => {
     // const [hovered, setHovered] = useState(false);
 
     return (
-        <div className=' flex'
-            onMouseEnter={() => setHovered(true)}
-            onMouseLeave={() => setHovered(false)}
-        >
+        <div className=' flex'>
             <div className="underlineup">
                 Cocinada en horno de leña
             </div>

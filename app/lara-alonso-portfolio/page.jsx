@@ -85,23 +85,23 @@ export default function Portfolio() {
         </div>
         <div className="parallax bg-custom1 bg-fixed bg-center bg-no-repeat bg-cover h-[1500px]"></div>
 
-        <div className="texto  leading-8 text-black  h-[500px] p-8 text-3xl flex items-center justify-center align-middle">
+        <div className="texto  leading-8 text-black  h-[500px] p-8 text-lg md:text-3xl flex items-center justify-center align-middle">
           <LetterDance />
         </div>
         <div className="parallax2 bg-custom2 bg-fixed bg-center bg-no-repeat bg-cover h-[1000px]"></div>
 
-        <div className="texto  leading-8 text-black h-[500px] p-8  text-3xl flex items-center justify-center align-middle">
+        <div className="texto  leading-8 text-black h-[500px] p-8  text-lg md:text-3xl flex items-center justify-center align-middle">
           <Underlineup/>
         </div>
 
         <div className="parallax3 bg-custom3 bg-fixed bg-center bg-no-repeat bg-cover h-[1000px]"></div>
-        <div className="texto  leading-8 text-black h-[300px] p-8  text-3xl flex items-end justify-center align-middle">
+        <div className="texto  leading-8 text-black h-[300px] p-8  text-lg md:text-3xl flex items-end justify-center align-middle">
           <ArrowSlide texto="Reserva hoy mismo" />
         </div>
         <a href="https://www.lara-alonso.com/lara-alonso-portfolio">
-          <ArrowBack texto="Retrocede" />
+          <ArrowBack texto="Volver arriba" />
         </a>
-        <FooterBlack />
+        <FooterBlack/>
       </div>
     </>
   )
