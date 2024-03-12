@@ -239,21 +239,6 @@
             "name": "Lara Alonso",
             "imageUrl": "/img/profileIcon.jpg"
         }
-    },
-    {
-        "id": 17,
-        "title": "Crea tu efecto Parallax",
-        "href": "frontend-development-tips/17",
-        "description": "Como crear un efecto Parallax en tu web.",
-        "category": "Diseño",
-        "imageUrl": "https://res.cloudinary.com/nodefacebook/image/upload/v1705158521/blogapp/calendar3_eqpolo.jpg",
-        "alt": "Efecto Parallax",
-        "date": "Dom 08 Marzo 2024",
-        "datetime": "2024-03-08",
-        "author": {
-            "name": "Lara Alonso",
-            "imageUrl": "/img/profileIcon.jpg "
-        }
     }
 
 ]
