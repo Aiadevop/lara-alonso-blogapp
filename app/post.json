@@ -254,6 +254,21 @@
             "name": "Lara Alonso",
             "imageUrl": "/img/profileIcon.jpg "
         }
+    },
+    {
+        "id": 18,
+        "title": "Como llamar a la API de Marvel",
+        "href": "frontend-development-tips/18",
+        "description": "Como poder obtener de la API de Marvel todos tus superhéroes y jugar en tus diseños.",
+        "category": "Next.js",
+        "imageUrl": "https://res.cloudinary.com/nodefacebook/image/upload/v1722087826/tormenta_o3adab.jpg",
+        "alt": "Fetch API Marvel",
+        "date": "Sab 27 Julio 2024",
+        "datetime": "2024-07-27",
+        "author": {
+            "name": "Lara Alonso",
+            "imageUrl": "/img/profileIcon.jpg "
+        }
     }
 
 ]

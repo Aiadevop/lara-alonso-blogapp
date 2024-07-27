@@ -12,7 +12,7 @@ export const Linkgit = () => {
 
     return (
         <>
-            <Link href="https://www.linkedin.com/in/lara-alonso/">
+            <Link href="https://www.linkedin.com/in/lara-alonso/" target="_blank">
                 <Image
                     src={isHovered1 ? "/icons/linkedinhoverblack.png" : "/icons/linkedinblack.png"}
                     width={36}
@@ -23,7 +23,7 @@ export const Linkgit = () => {
                     onMouseLeave={() => setIsHovered1(false)}
                 />
             </Link>
-            <Link href="https://github.com/Aiadevop?tab=repositories">
+            <Link href="https://github.com/Aiadevop?tab=repositories" target="_blank">
             <Image
                     src={isHovered2 ? "/icons/githubhoverblack.png" : "/icons/githubigblack.png"}
                     width={36}
@@ -34,7 +34,7 @@ export const Linkgit = () => {
                     onMouseLeave={() => setIsHovered2(false)}
                 />
           </Link>
-            <Link href="https://aiadevop.github.io/CV/">
+            <Link href="https://aiadevop.github.io/CV/" target="_blank">
             <Image
                     src={isHovered3 ? "/icons/resumehoverblack.png" : "/icons/resumeblack.png"}
                     width={36}
