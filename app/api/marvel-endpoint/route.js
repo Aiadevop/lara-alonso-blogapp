@@ -1,31 +1,38 @@
-import { NextResponse } from "next/server";
-import md5 from 'md5'; // Asegúrate de que md5 esté importado
+import { NextResponse } from 'next/server';
+import crypto from 'crypto';
 
 // Función para crear la URL con parámetros
-export async function createURL() {
+async function createURL() {
     const publickey = process.env.DISNEY_PUBLIC_KEY;
     const privatekey = process.env.DISNEY_PRIVATE_KEY;
     const apiBaseUrl = "https://gateway.marvel.com/v1/public/comics";
 
-    const ts = Date.now();
+    const ts = Date.now().toString();
 
-    // Crear el hash MD5
-    const hash = md5(ts + privatekey + publickey);
+    try {
+        // Crear el hash MD5 usando crypto
+        const hash = crypto.createHash('md5')
+                           .update(ts + privatekey + publickey)
+                           .digest('hex');
 
-    // Crear los parámetros de la URL
-    const params = new URLSearchParams({
-        ts: ts,
-        apikey: publickey,
-        hash: hash,
-    });
+        // Crear los parámetros de la URL
+        const params = new URLSearchParams({
+            ts: ts,
+            apikey: publickey,
+            hash: hash,
+        });
 
-    // Construir la URL completa
-    const url = `${apiBaseUrl}?${params.toString()}`;
+        // Construir la URL completa
+        const url = `${apiBaseUrl}?${params.toString()}`;
 
-    return url;
+        return url;
+    } catch (error) {
+        console.error('Error creating URL:', error);
+        throw error;
+    }
 }
 
-// Función GET para manejar las solicitudes
+// Manejar la solicitud GET
 export async function GET() {
     try {
         const url = await createURL(); // Llama a createURL para obtener la URL
