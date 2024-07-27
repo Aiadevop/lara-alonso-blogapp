@@ -16,17 +16,18 @@ export default function Page18() {
         const fetchData = async () => {
             try {
                 const response = await fetch('/api/marvel-endpoint');
-                console.log(response);
                 if (!response.ok) {
                     throw new Error('Network response was not ok');
                 }
                 const result = await response.json();
+                console.log(result); // Verifica la estructura de `result`
                 setData(result);
             } catch (error) {
+                console.error('Error fetching data:', error);
                 setError(error.message);
             }
         };
-
+    
         fetchData();
     }, []);
 
@@ -116,7 +117,7 @@ export default function Page18() {
                         </div>                        
                     </div>
                     {error && <p>Error: {error}</p>}
-                    {data ? (
+                    {data && data.data && data.data.results ? (
                         <>
                             <div className="comics-container grid grid-cols-[repeat(auto-fill,minmax(200px,1fr))]  justify-items-center p-5">
                                 {data.data.results.map((comic, index) => (
