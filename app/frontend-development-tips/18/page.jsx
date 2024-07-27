@@ -53,7 +53,7 @@ export default function Page18() {
                         <br />
                         <div>
                             Tenéis toda la información en la web oficial <b className="text-violetitle">
-                                <Link href="https://www.marvel.com/" target="blank"> https://www.marvel.com/ </Link></b>
+                                <Link href="https://www.marvel.com/" target="blank"> https://www.marvel.com/ </Link>.</b>
                         </div>
                         <br />
                         <div><b>Pasos para extraer toda la data y después darle estilos en nuestra web:</b></div>
