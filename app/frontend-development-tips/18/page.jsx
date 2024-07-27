@@ -85,7 +85,7 @@ export default function Page18() {
                             <a href="https://github.com/Aiadevop/lara-alonso-blogapp/tree/main/app"
                                 target="blank">
                                 <img
-                                    src="https://res.cloudinary.com/nodefacebook/image/upload/v1722089895/blogapp/fetch_url2_dxyjkw.jpg"
+                                    src="https://res.cloudinary.com/nodefacebook/image/upload/v1722086574/marvelapi_binjvo.jpg"
                                     width={400}
                                     height={400}
                                     alt="route.js get data"
