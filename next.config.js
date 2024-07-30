@@ -5,7 +5,7 @@ const nextConfig = {
   pageExtensions: ['js', 'jsx', 'mdx', 'ts', 'tsx'],
   reactStrictMode: true,
   swcMinify: true,
-  experimental: {appDir: true},
+  // experimental: {appDir: true},
   images: {   
     remotePatterns: [
       {
@@ -17,6 +17,12 @@ const nextConfig = {
       {
         protocol: 'https',
         hostname: 'res.cloudinary.com',
+        port: '',
+        pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'gateway.marvel.com',
         port: '',
         pathname: '/**',
       },

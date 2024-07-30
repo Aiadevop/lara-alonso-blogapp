@@ -17,6 +17,7 @@ export default function Page18() {
             try {
                 const response = await fetch('/api/marvel-endpoint');
                 if (!response.ok) {
+                    console.log(response);
                     throw new Error('Network response was not ok');
                 }
                 const result = await response.json();
