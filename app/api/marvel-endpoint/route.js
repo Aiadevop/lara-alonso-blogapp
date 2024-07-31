@@ -5,7 +5,8 @@ export async function GET() {
         const tsHash = process.env.TS_HASH;
         const apikey = process.env.DISNEY_PUBLIC_KEY;
         const hash = process.env.HASH_MD5_MARVEL;
-        const response = await fetch(`https://gateway.marvel.com/v1/public/comics?ts=${tsHash}&apikey=${apikey}&hash=${hash}`);
+        const url = `https://gateway.marvel.com/v1/public/comics?ts=${tsHash}&apikey=${apikey}&hash=${hash}`
+        const response = await fetch(url);
         const data = await response.json();
         return NextResponse.json(data);        
     } catch (error){

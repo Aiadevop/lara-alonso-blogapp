@@ -16,12 +16,12 @@ export default function Page18() {
         const fetchData = async () => {
             try {
                 const response = await fetch('/api/marvel-endpoint');
+                console.log('response',response);
                 if (!response.ok) {
                     console.log(response);
                     throw new Error('Network response was not ok');
                 }
                 const result = await response.json();
-                console.log(result); // Verifica la estructura de `result`
                 setData(result);
             } catch (error) {
                 console.error('Error fetching data:', error);
