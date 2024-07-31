@@ -13,7 +13,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="es">
       <head></head>
-      <body className={inter.className} suppressHydrationWarning={true} >
+      <body className={`${inter.className} min-h-screen bg-white`}  suppressHydrationWarning={true} >
         {children}
         <Analytics />
       </body>
