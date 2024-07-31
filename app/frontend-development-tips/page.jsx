@@ -28,7 +28,7 @@ export default function Articulos() {
                             onChange={(e) => setSearchTerm(e.target.value)}
                             className="mt-4 p-2 border text-black border-gray-300 rounded-md w-full"
                         />
-                        <div className="mt-16 space-y-20 lg:mt-20 lg:space-y-20">
+                        <div className="mt-16 space-y-20 lg:mt-20 pb-36 lg:space-y-20">
                             {postreverse.map(post => {
                                 const isVisible = post.title?.toLowerCase().includes(searchTerm.toLowerCase().trim()) ||
                                                   post.category?.title?.toLowerCase().includes(searchTerm.toLowerCase().trim());
