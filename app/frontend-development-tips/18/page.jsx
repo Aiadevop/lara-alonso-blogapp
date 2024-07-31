@@ -145,6 +145,10 @@ export default function Page18() {
                     ) : (
                         <p>Loading...</p>
                     )}
+                    <div>
+                            ¡¡¡OJO!!! No os olvideis <b className="text-violetitle">
+                                <Link href="https://vercel.com/docs/projects/environment-variables" target="blank"> subir vuestro .env a Vercel.</Link></b> Pasa en las mejores familias 😂<br/><br/>   
+                    </div>  
                     <div>Listo ¡¡¡¡¡ Si has llegado hasta aquí y quieres saber como desplegar tu código en Vercel, aquí te dejo el post {' '}
                             <b><Link href="/frontend-development-tips/11" className="text-violetitle">Como subir mi aplicación a Vercel</Link></b></div>
                     <FooterPost className="z-10" />

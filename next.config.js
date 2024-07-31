@@ -5,6 +5,7 @@ const nextConfig = {
   pageExtensions: ['js', 'jsx', 'mdx', 'ts', 'tsx'],
   reactStrictMode: true,
   swcMinify: true,
+  staticPageGenerationTimeout: 120, 
   // experimental: {appDir: true},
   images: {   
     remotePatterns: [
