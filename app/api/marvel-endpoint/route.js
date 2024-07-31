@@ -7,6 +7,7 @@ export async function GET() {
         const hash = process.env.HASH_MD5_MARVEL;
         const url = `https://gateway.marvel.com/v1/public/comics?ts=${tsHash}&apikey=${apikey}&hash=${hash}`
         const response = await fetch(url);
+        console.log(url);
         const data = await response.json();
         return NextResponse.json(data);        
     } catch (error){
