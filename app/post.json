@@ -269,6 +269,21 @@
             "name": "Lara Alonso",
             "imageUrl": "/img/profileIcon.jpg "
         }
+    },
+    {
+        "id": 19,
+        "title": "Como conectarse con Supabase y tener tu base de datos SQL de forma gratuita.",
+        "href": "frontend-development-tips/19",
+        "description": "Necesitas conectarte a una base de datos SQL con Supabase, 500MB de capa gratuita.",
+        "category": "Next.js",
+        "imageUrl": "https://res.cloudinary.com/dguhnftxe/image/upload/v1735844423/blog/Gemini_Generated_Image_yx6newyx6newyx6n_f4bhp1.jpg",
+        "alt": "API Supabase",
+        "date": "Jue 02 Enero 2025",
+        "datetime": "2024-01-02",
+        "author": {
+            "name": "Lara Alonso",
+            "imageUrl": "/img/profileIcon.jpg "
+        }
     }
 
 ]
