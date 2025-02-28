@@ -34,7 +34,7 @@ export const Linkgit = () => {
                     onMouseLeave={() => setIsHovered2(false)}
                 />
           </Link>
-            <Link href="https://aiadevop.github.io/CV/" target="_blank">
+            <Link href="https://www.canva.com/design/DAGIr6C2xA8/2_Ney2fAfUe72zzof-YrYg/view?utm_content=DAGIr6C2xA8&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h39db8396d8" target="_blank">
             <Image
                     src={isHovered3 ? "/icons/resumehoverblack.png" : "/icons/resumeblack.png"}
                     width={36}
