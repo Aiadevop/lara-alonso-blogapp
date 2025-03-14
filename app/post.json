@@ -279,7 +279,22 @@
         "imageUrl": "https://res.cloudinary.com/dguhnftxe/image/upload/v1735844423/blog/Gemini_Generated_Image_yx6newyx6newyx6n_f4bhp1.jpg",
         "alt": "API Supabase",
         "date": "Jue 02 Enero 2025",
-        "datetime": "2024-01-02",
+        "datetime": "2025-01-02",
+        "author": {
+            "name": "Lara Alonso",
+            "imageUrl": "/img/profileIcon.jpg "
+        }
+    },
+    {
+        "id": 20,
+        "title": "Juega al nuevo buscaminas. Aquí está el código https://github.com/Aiadevop/buscaminas",
+        "href": "https://newbuscaminas.vercel.app/",
+        "description": "¿Te apatece echar una partida a la nueva versión del buscaminas? Aquí está el código: https://github.com/Aiadevop/buscaminas",
+        "category": "Python",
+        "imageUrl": "https://res.cloudinary.com/nodefacebook/image/upload/v1741932286/blogapp/buscaminas1_smub0k.jpg",
+        "alt": "Buscaminas",
+        "date": "Vie 14 Marzo 2025",
+        "datetime": "2025-03-14",
         "author": {
             "name": "Lara Alonso",
             "imageUrl": "/img/profileIcon.jpg "

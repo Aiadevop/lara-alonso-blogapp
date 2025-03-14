@@ -92,8 +92,8 @@ export default function Blog() {
                 className="relative isolate flex flex-col justify-end overflow-hidden rounded-2xl bg-gray-900 px-8 pb-8 pt-80 sm:pt-48 lg:pt-80 "
               >
                 <Link
-                  href={`/frontend-development-tips/${post.id}`}
-                  onClick={(e) => handleRotateImage(e, `/frontend-development-tips/${post.id}`)} >
+                  href={`${post.href}`}
+                  onClick={(e) => handleRotateImage(e, `${post.href}`)} >
                   <img src={post.imageUrl} alt="" className="imagePost absolute inset-0 -z-10 h-full w-full object-cover" />
                   <div className="absolute inset-0 -z-10 bg-gradient-to-t from-gray-900 via-gray-900/40" />
                   <div className="absolute inset-0 -z-10 rounded-2xl ring-1 ring-inset ring-gray-900/10" />
@@ -113,7 +113,7 @@ export default function Blog() {
                     </div>
                   </div>
                   <h3 className="mt-3 text-lg font-semibold leading-6 text-white">
-                    <div href={post.href}>
+                    <div href={post.href} className="break-words">
                       <span className="absolute inset-0" />
                       {post.title}
                     </div>
