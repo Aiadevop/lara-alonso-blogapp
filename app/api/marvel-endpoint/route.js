@@ -25,8 +25,8 @@ export async function GET() {
                             id: 1,
                             title: "Spider-Man: Homecoming",
                             thumbnail: {
-                                path: "https://picsum.photos/300/450",
-                                extension: "jpg"
+                                path: "https://res.cloudinary.com/dguhnftxe/image/upload/v1690188790/laralonsoround_d4xtfk",
+                                extension: "png"
                             },
                             urls: [{ url: "https://marvel.com" }]
                         },
@@ -34,8 +34,8 @@ export async function GET() {
                             id: 2,
                             title: "Iron Man: Armor Wars",
                             thumbnail: {
-                                path: "https://picsum.photos/300/450",
-                                extension: "jpg"
+                                path: "https://res.cloudinary.com/dguhnftxe/image/upload/v1690188790/laralonsoround_d4xtfk",
+                                extension: "png"
                             },
                             urls: [{ url: "https://marvel.com" }]
                         },
@@ -43,8 +43,8 @@ export async function GET() {
                             id: 3,
                             title: "Captain America: Civil War",
                             thumbnail: {
-                                path: "https://picsum.photos/300/450",
-                                extension: "jpg"
+                                path: "https://res.cloudinary.com/dguhnftxe/image/upload/v1690188790/laralonsoround_d4xtfk",
+                                extension: "png"
                             },
                             urls: [{ url: "https://marvel.com" }]
                         },
@@ -52,8 +52,8 @@ export async function GET() {
                             id: 4,
                             title: "Black Panther: Wakanda Forever",
                             thumbnail: {
-                                path: "https://picsum.photos/300/450",
-                                extension: "jpg"
+                                path: "https://res.cloudinary.com/dguhnftxe/image/upload/v1690188790/laralonsoround_d4xtfk",
+                                extension: "png"
                             },
                             urls: [{ url: "https://marvel.com" }]
                         },
@@ -61,8 +61,8 @@ export async function GET() {
                             id: 5,
                             title: "Thor: Love and Thunder",
                             thumbnail: {
-                                path: "https://picsum.photos/300/450",
-                                extension: "jpg"
+                                path: "https://res.cloudinary.com/dguhnftxe/image/upload/v1690188790/laralonsoround_d4xtfk",
+                                extension: "png"
                             },
                             urls: [{ url: "https://marvel.com" }]
                         },
@@ -70,8 +70,8 @@ export async function GET() {
                             id: 6,
                             title: "Doctor Strange: Multiverse of Madness",
                             thumbnail: {
-                                path: "https://picsum.photos/300/450",
-                                extension: "jpg"
+                                path: "https://res.cloudinary.com/dguhnftxe/image/upload/v1690188790/laralonsoround_d4xtfk",
+                                extension: "png"
                             },
                             urls: [{ url: "https://marvel.com" }]
                         }

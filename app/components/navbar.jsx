@@ -17,15 +17,16 @@ export default function Navbar() {
                         <div className="relative flex h-18 justify-center">
                             <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-center ">
                                 <div className="bg-white sm:ml-6 flex sm:space-x-8 border-4 rounded-full  shadow-lg px-4 py-2">
-                                    <div>
+                                    <div className="flex items-center justify-center">
                                         <Link href="/">
                                             <Image
-                                                className="flex flex-1 items-center justify-center flex-col ml-1"
+                                                className="flex items-center justify-center"
                                                 src="https://res.cloudinary.com/dguhnftxe/image/upload/v1690188790/laralonsoround_d4xtfk.png"
                                                 width={65}
                                                 height={65.5}
                                                 alt="Lara Alonso Favicon"
-                                            /></Link>
+                                            />
+                                        </Link>
                                     </div>
                                     <div className="sm:flex flex-1 items-center justify-center flex-col ml-1 hidden">
                                         <Link href="https://github.com/Aiadevop/">
