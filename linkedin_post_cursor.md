@@ -1,6 +1,10 @@
 🚀 **Cómo Cursor AI transformó mi proyecto de blog de un pequeño experimento a una aplicación escalable**
 
-Hace unos meses comencé con un simple blog en Next.js - lo típico: unas cuantas páginas, componentes básicos y archivos JSON para el contenido. Era funcional, pero no escalable.
+Hace unas semanas estuve con un amigo programador senior y me "riñó" por no estar utilizando Cursor. Vi cómo alguien con sus conocimientos tan amplios generaba en cuatro meses lo que habría tardado un año. Me advirtió que la herramienta era cada vez más potente y compleja, y que quedarse atrás ya no era una opción - el tiempo es oro en programación.
+
+Decidí lanzarme y... sinceramente, me he enamorado 💙
+
+Tenía un blog en Next.js - lo típico: unas cuantas páginas, componentes básicos y archivos JSON para el contenido. Era funcional, pero no escalable.
 
 **El problema**: El proyecto crecía, pero la arquitectura no. Cada nueva funcionalidad se volvía más compleja de implementar y mantener.
 
