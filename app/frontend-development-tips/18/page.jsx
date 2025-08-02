@@ -132,20 +132,9 @@ export default function Page18() {
                 </div>
                 
                 {error && (
-                    <div className="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded">
-                        <strong>Error:</strong> {error}
-                        <br />
-                        <small className="text-sm">
-                            Para que funcione, configura las variables de entorno en tu archivo .env.local:
-                            <br />
-                            DISNEY_PUBLIC_KEY=tu_public_key
-                            <br />
-                            DISNEY_PRIVATE_KEY=tu_private_key
-                            <br />
-                            TS_HASH=1234567890
-                            <br />
-                            HASH_MD5_MARVEL=tu_hash_md5
-                        </small>
+                    <div className="px-4 py-3 ">
+                        <strong>Los héroes se han ido de vacaciones</strong>
+                       
                     </div>
                 )}
                 
