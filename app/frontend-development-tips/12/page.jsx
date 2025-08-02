@@ -1,6 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
 import { FooterBlack } from "@/app/components/footerblack";
-import { FooterPost } from "@/app/components/footerpost";
 import Navbarblack from "@/app/components/navbar";
 import Head from "next/head";
 import Link from "next/link";
@@ -87,8 +86,8 @@ export default function Page12() {
                         <div>Si has llegado hasta aquí y quieres saber quién visita tu web, puedes leer mi post {' '}
                             <Link href="/frontend-development-tips/10" className="text-violetitle">¿Quiéres saber cuántas personas visitan tu web?</Link></div>
                     </div>
-                    <FooterPost />
                 </article>
+                <div className="mb-20"></div>
                 <FooterBlack />
             </div>
 

@@ -1,7 +1,7 @@
 "use client";
 /* eslint-disable @next/next/no-img-element */
-import { Footer } from "@/app/components/ui/Footer";
-import Navbar from "@/app/components/ui/Navbar";
+import { FooterBlack } from "@/app/components/footerblack";
+import Navbarblack from "@/app/components/navbar";
 import Link from "next/link";
 import { useEffect, useState } from 'react';
 
@@ -51,7 +51,7 @@ export default function Page18() {
 
     return (
         <div className="bg-black">
-            <Navbar variant="dark" />
+            <Navbarblack />
             <article className="max-w-5xl px-6 py-24 mx-auto space-y-12 bg-gray-100 text-gray-900 mt-20">
                 <div className="w-full mx-auto space-y-4 text-center">
                     <h1 className="text-4xl font-bold leadi md:text-5xl px-10">Fetch a la API de Marvel</h1>
@@ -180,9 +180,10 @@ export default function Page18() {
                         <Link href="https://vercel.com/docs/projects/environment-variables" target="blank"> subir vuestro .env a Vercel.</Link></b> Pasa en las mejores familias 😂<br/><br/>   
                 </div>  
                 <div>Listo ¡¡¡¡¡ Si has llegado hasta aquí y quieres saber como desplegar tu código en Vercel, aquí te dejo el post {' '}
-                    <b><Link href="/frontend-development-tips/11" className="text-violetitle">Como subir mi aplicación a Vercel</Link></b></div>
-                <Footer variant="dark" />
+                    <b><Link href="/frontend-development-tips/11" className="text-violet-600 hover:text-violet-700 font-semibold transition-colors">Como subir mi aplicación a Vercel</Link></b></div>
             </article>
+            <div className="mb-20"></div>
+            <FooterBlack />
         </div>
     )
 }

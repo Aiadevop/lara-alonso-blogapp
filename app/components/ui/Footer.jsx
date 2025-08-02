@@ -36,14 +36,37 @@ export const Footer = ({ variant = 'default' }) => {
             'mt-1 border-t pt-8 md:flex md:items-center md:justify-between',
             isDark ? 'border-gray-700' : 'border-gray-900/10'
           )}>
+            {/* Información principal */}
+            <div className="md:order-1">
+              <p className={classNames(
+                'text-sm font-medium',
+                isDark ? 'text-white' : 'text-gray-900'
+              )}>
+                Lara Alonso @aiadevop
+              </p>
+              <p className={classNames(
+                'text-xs mt-1 max-w-md',
+                isDark ? 'text-gray-300' : 'text-gray-600'
+              )}>
+                Soy programadora fullstack en España, especializada en desarrollo web y aplicaciones. Actualmente cursando un máster en Ciencia de Datos, combino desarrollo frontend y backend con análisis de datos. Explora mi portfolio y descubre mis proyectos.
+              </p>
+              <p className={classNames(
+                'text-xs mt-1 font-medium',
+                isDark ? 'text-violet-300' : 'text-violet-600'
+              )}>
+                ¡Tu visión mi código!
+              </p>
+            </div>
+
+            {/* Iconos sociales */}
             <div className="flex space-x-6 md:order-2">
               {SOCIAL_LINKS.map((item) => (
                 <Link
                   key={item.name}
                   href={item.href}
                   className={classNames(
-                    'hover:text-gray-500',
-                    isDark ? 'text-gray-400 hover:text-gray-300' : 'text-gray-400'
+                    'transition-colors duration-200 hover:scale-110',
+                    isDark ? 'text-gray-400 hover:text-gray-300' : 'text-gray-400 hover:text-gray-500'
                   )}
                   target="_blank"
                   rel="noopener noreferrer"
@@ -53,21 +76,33 @@ export const Footer = ({ variant = 'default' }) => {
                 </Link>
               ))}
             </div>
+          </div>
+
+          {/* Copyright */}
+          <div className="mt-4 text-center md:text-left">
             <p className={classNames(
-              'mt-8 text-xs leading-5 md:order-1 md:mt-0',
+              'text-xs',
               isDark ? 'text-gray-400' : 'text-gray-500'
             )}>
-              <Link href={SITE_CONFIG.githubUrl}>
+              <Link 
+                href={SITE_CONFIG.githubUrl}
+                className={classNames(
+                  'transition-colors duration-200',
+                  isDark ? 'hover:text-gray-300' : 'hover:text-gray-700'
+                )}
+              >
                 &copy; 2023 {SITE_CONFIG.author} @aiadevop
               </Link>
             </p>
           </div>
         </div>
       </footer>
+      
+      {/* Enlace de atribuciones */}
       <Link href="/atribuciones">
         <div className={classNames(
-          'pt-8 text-xs leading-5 md:order-1 md:mt-0 pl-8 pb-8',
-          isDark ? 'bg-black text-gray-400' : 'bg-white text-gray-300'
+          'pt-8 text-xs leading-5 md:order-1 md:mt-0 pl-8 pb-8 transition-colors duration-200',
+          isDark ? 'bg-black text-gray-400 hover:text-gray-300' : 'bg-white text-gray-300 hover:text-gray-500'
         )}>
           Gracias a todos los que han colaborado en este blog
         </div>

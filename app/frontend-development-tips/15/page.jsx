@@ -1,6 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
 import { FooterBlack } from "@/app/components/footerblack";
-import { FooterPost } from "@/app/components/footerpost";
 import Navbarblack from "@/app/components/navbar";
 import Toogle from "@/app/components/toogle";
 // import Head from "next/head";

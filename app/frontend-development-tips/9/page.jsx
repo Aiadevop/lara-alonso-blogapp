@@ -1,6 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
 import { FooterBlack } from "@/app/components/footerblack";
-import { FooterPost } from "@/app/components/footerpost";
 import Navbarblack from "@/app/components/navbar";
 import Head from "next/head";
 import Link from "next/link";
@@ -14,15 +13,15 @@ export default function Page9() {
                 <Navbarblack />
                 <article className="max-w-5xl px-6 py-24 mx-auto space-y-12 bg-gray-100 text-gray-900 mt-20">
                     <div className="w-full mx-auto space-y-4 text-center">
-                        <h1 className="text-4xl font-bold leadi md:text-5xl">Cómo utilizar React y Next.js para construir sitios web de alto rendimiento</h1>
-                        <div className="text-sm text-gray-400">by {' '}
-                            <a rel="noopener noreferrer" href="#" target="_blank" className="underline text-violet-400">
+                        <h1 className="text-4xl font-bold leading-tight md:text-6xl bg-gradient-to-r from-violet-600 to-purple-600 bg-clip-text text-transparent">Cómo utilizar React y Next.js para construir sitios web de alto rendimiento</h1>
+                        <div className="text-sm text-gray-500 font-medium">by {' '}
+                            <a rel="noopener noreferrer" href="#" target="_blank" className="underline text-violet-500 hover:text-violet-600 transition-colors">
                                 <span itemProp="name">Lara Alonso</span>
                             </a>
-                            <time dateTime="2023-07-10 ">{' '}10/07/2023</time>
+                            <time dateTime="2023-07-10 " className="ml-2">{' '}10/07/2023</time>
                         </div>
                     </div>
-                    <div><b className="text-xl text-violetitle">Optmiza tu página con React y Next.js.</b></div>
+                    <div><b className="text-2xl font-semibold text-violet-600 mb-4">Optmiza tu página con React y Next.js.</b></div>
 
                     <div className="flex items-center">
                         <img
@@ -103,10 +102,10 @@ export default function Page9() {
                         <br />
 
                         <div>Si has llegado hasta aquí y quieres saber más sobre Next.js, puedes leer mi post {' '}
-                            <Link href="/frontend-development-tips/1" className="text-violetitle">Crea tu primera aplicación en Next.js 13</Link></div>
+                            <Link href="/frontend-development-tips/1" className="text-violet-600 hover:text-violet-700 font-semibold transition-colors">Crea tu primera aplicación en Next.js 13</Link></div>
                     </div>
-                    <FooterPost />
                 </article>
+                <div className="mb-20"></div>
                 <FooterBlack />
             </div>
 

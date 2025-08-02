@@ -1,7 +1,7 @@
 "use client";
 /* eslint-disable @next/next/no-img-element */
-import { FooterPost } from "@/app/components/footerpost";
-import Navbar from "@/app/components/navbar";
+import { FooterBlack } from "@/app/components/footerblack";
+import Navbarblack from "@/app/components/navbar";
 import Head from "next/head";
 import Link from "next/link";
 import { createClient } from '@supabase/supabase-js'
@@ -31,7 +31,7 @@ export default function Page19() {
                 <title>Lara Alonso aiadevop| Blog Next.js React</title>
             </Head>
             <div className="bg-black">
-                <Navbar />
+                <Navbarblack />
                 <article className="max-w-5xl px-6 py-24 mx-auto space-y-12 bg-gray-100 text-gray-900 mt-20">
                     <div className="w-full mx-auto space-y-4 text-center">
                         <h1 className="text-4xl font-bold leadi md:text-5xl px-10">Como conectarse con Supabase y tener tu base de datos SQL de forma gratuita</h1>
@@ -90,8 +90,9 @@ export default function Page19() {
                     </div>
                     <div>Listo ¡¡¡¡¡ Si has llegado hasta aquí y quieres saber como desplegar tu código en Vercel, aquí te dejo el post {' '}
                             <b><Link href="/frontend-development-tips/11" className="text-violetitle">Como subir mi aplicación a Vercel</Link></b></div>
-                    <FooterPost className="z-10" />
                 </article>
+                <div className="mb-20"></div>
+                <FooterBlack />
             </div>
         </>
     )

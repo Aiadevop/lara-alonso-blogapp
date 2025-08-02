@@ -1,6 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
 import { FooterBlack } from "@/app/components/footerblack";
-import { FooterPost } from "@/app/components/footerpost";
 import Navbarblack from "@/app/components/navbar";
 import Head from "next/head";
 import Link from "next/link";
@@ -96,8 +95,8 @@ export default function Page16() {
                         <div>Listo ¡¡¡¡¡ Si has llegado hasta aquí y quieres saber como aparecer en los rastreadores de Google, puedes leer mi post {' '}
                             <b><Link href="/frontend-development-tips/12" className="text-violetitle hover:underline-offset-2 hover:underline">Mi web no aparece en Google !!!</Link> 🙀</b></div>
                     </div>
-                    <FooterPost />
                 </article>
+                <div className="mb-20"></div>
                 <FooterBlack />
             </div>
         </>

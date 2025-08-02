@@ -5,7 +5,6 @@ import { Switch } from '@headlessui/react'
 import Head from 'next/head'
 import Navbarblack from './navbar'
 import Link from 'next/link'
-import { FooterPost } from './footerpost'
 import { FooterBlack } from './footerblack'
 import { ButtonToogle } from './buttonToogle'
 
@@ -156,8 +155,8 @@ export default function Toogle() {
                         <div>Listo ¡¡¡¡¡ Si has llegado hasta aquí y quieres saber como añadir filtros a tu Blog creado en Next.js o React puedes leer  {' '}
                             <b><Link href="/frontend-development-tips/7" className={classNames(!enabled ? "text-sm text-violetitle" : "text-sm text-fuchsia-300")}> mi post</Link></b></div>
                     </div>
-                    <FooterPost />
                 </article>
+                <div className="mb-20"></div>
                 <FooterBlack />
             </div>
         </>

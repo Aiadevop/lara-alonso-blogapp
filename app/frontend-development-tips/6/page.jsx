@@ -1,6 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
 import { FooterBlack } from "@/app/components/footerblack";
-import { FooterPost } from "@/app/components/footerpost";
 import Navbarblack from "@/app/components/navbar";
 import Head from "next/head";
 import Link from "next/link";
@@ -14,15 +13,15 @@ export default function Page6() {
                 <Navbarblack />
                 <article className="max-w-5xl px-6 py-24 mx-auto space-y-12 bg-gray-100 text-gray-900 mt-20">
                     <div className="w-full mx-auto space-y-4 text-center">
-                        <h1 className="text-4xl font-bold leadi md:text-5xl">Como conectarte a la API de OpenAI y configurarla</h1>
-                        <div className="text-sm text-gray-400">by {' '}
-                            <a rel="noopener noreferrer" href="#" target="_blank" className="underline text-violet-400">
+                        <h1 className="text-4xl font-bold leading-tight md:text-6xl bg-gradient-to-r from-violet-600 to-purple-600 bg-clip-text text-transparent">Como conectarte a la API de OpenAI y configurarla</h1>
+                        <div className="text-sm text-gray-500 font-medium">by {' '}
+                            <a rel="noopener noreferrer" href="#" target="_blank" className="underline text-violet-500 hover:text-violet-600 transition-colors">
                                 <span itemProp="name">Lara Alonso</span>
                             </a>
-                            <time dateTime="2023-06-12 ">{' '}12/06/2023</time>
+                            <time dateTime="2023-06-12 " className="ml-2">{' '}12/06/2023</time>
                         </div>
                     </div>
-                    <div><b className="text-xl text-violetitle">¿Trabajas con Nodejs o Phyton? OpenAI te lo pone muy fácil.</b></div>
+                    <div><b className="text-2xl font-semibold text-violet-600 mb-4">¿Trabajas con Nodejs o Phyton? OpenAI te lo pone muy fácil.</b></div>
                     <br />
                     <div className="text-gray-900">
                         <div>OPENAI nos pone muy fácil integrarlo en nuestras aplicaciones, en el siguiente enlace nos da dos códigos básicos para que funcione en
@@ -35,7 +34,7 @@ export default function Page6() {
                             </div>
                         </Link>
                         <br />
-                        <div className="text-xl text-violetitle"><b>Parámetros de la API que puedes configurar:</b></div>
+                        <div className="text-2xl font-semibold text-violet-600 mb-4"><b>Parámetros de la API que puedes configurar:</b></div>
                         <br />
                         <div className="font-mono bg-black text-white">
                             <br />
@@ -52,7 +51,7 @@ export default function Page6() {
                             <br />
                         </div>
                         <br />
-                        <div className="text-xl text-violetitle"><b>Aquí tenéis algunos ejemplos:</b></div>
+                        <div className="text-2xl font-semibold text-violet-600 mb-4"><b>Aquí tenéis algunos ejemplos:</b></div>
                         <br />
                         <div className="flex items-center">
                             <img
@@ -85,10 +84,10 @@ export default function Page6() {
                         </div>
                         <br />
                         <div>Si has llegado hasta aquí y quieres saber más sobre prompts, puedes leer mi post {' '}
-                            <Link href="/frontend-development-tips/4" className="text-violetitle">Como generar prompts increíbles en ChatGPT</Link></div>
+                            <Link href="/frontend-development-tips/4" className="text-violet-600 hover:text-violet-700 font-semibold transition-colors">Como generar prompts increíbles en ChatGPT</Link></div>
                     </div>
-                    <FooterPost />
                 </article>
+                <div className="mb-20"></div>
                 <FooterBlack />
             </div>
 

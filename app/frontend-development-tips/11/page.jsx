@@ -1,6 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
 import { FooterBlack } from "@/app/components/footerblack";
-import { FooterPost } from "@/app/components/footerpost";
 import Navbarblack from "@/app/components/navbar";
 import Head from "next/head";
 import Link from "next/link";
@@ -14,7 +13,7 @@ export default function Page11() {
                 <Navbarblack />
                 <article className="max-w-5xl px-6 py-24 mx-auto space-y-12 bg-gray-100 text-gray-900 mt-20">
                     <div className="w-full mx-auto space-y-4 text-center">
-                        <h1 className="text-4xl font-bold leadi md:text-5xl">Como subir mi aplicación a Vercel</h1>
+                        <h1 className="text-4xl font-bold leading-tight md:text-6xl bg-gradient-to-r from-violet-600 to-purple-600 bg-clip-text text-transparent">Como subir mi aplicación a Vercel</h1>
                         <div className="text-sm text-gray-400">by {' '}
                             <a rel="noopener noreferrer" href="#" target="_blank" className="underline text-violet-400">
                                 <span itemProp="name">Lara Alonso</span>
@@ -96,8 +95,8 @@ export default function Page11() {
                         <div>Si has llegado hasta aquí y quieres saber más sobre Vercel, puedes leer mi post {' '}
                             <Link href="/frontend-development-tips/10" className="text-violetitle">¿Quiéres saber cuántas personas visitan tu web?</Link></div>
                     </div>
-                    <FooterPost />
                 </article>
+                <div className="mb-20"></div>
                 <FooterBlack />
             </div>
 
