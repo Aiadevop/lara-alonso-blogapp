@@ -169,7 +169,7 @@ export default function Portfolio() {
               <div className="mt-8">
                 <div className="bg-gradient-to-r from-yellow-100 to-orange-100 p-4 rounded-xl border border-yellow-200">
                   <p className="text-lg font-semibold text-gray-800">
-                    "El secreto está en el fuego lento y la paciencia del artesano"
+                    &ldquo;El secreto está en el fuego lento y la paciencia del artesano&rdquo;
                   </p>
                 </div>
               </div>
