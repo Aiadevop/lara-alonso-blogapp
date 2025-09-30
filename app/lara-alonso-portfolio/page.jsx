@@ -38,7 +38,8 @@ export default function Portfolio() {
               No se trataba solamente de crear una web donde mostrar mis conocimientos.
               Es una forma de ayudar a otros a emprender su camino en el mundo web.
               Mi trayectoria comenzó en la Ingeniería Industrial, pero mi amor por el diseño y
-              la tecnología me llevó a completar un FP en Desarrollo de Aplicaciones Web y dedicarme al mundo de la programación.
+              la tecnología me llevó a completar un FP en Desarrollo de Aplicaciones Web y dedicarme al mundo de la programación. 
+              Actualmente, estoy cursando un máster en Ciencia de Datos, combino desarrollo frontend y backend con análisis de datos.
             </p>
             <div className="flex mt-10">
               <Linkgit />

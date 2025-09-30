@@ -1,43 +1,24 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  // Optimizaciones de performance
   experimental: {
-    // optimizeCss: true, // Deshabilitado temporalmente
+    optimizeCss: true,
     optimizePackageImports: ['@headlessui/react', '@heroicons/react'],
   },
+  
+  // Configuración de imágenes
   images: {
-    formats: ['image/webp', 'image/avif'],
+    formats: ['image/avif', 'image/webp'],
     deviceSizes: [640, 750, 828, 1080, 1200, 1920, 2048, 3840],
     imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
-    remotePatterns: [
-      {
-        protocol: 'https',
-        hostname: 'res.cloudinary.com',
-        port: '',
-        pathname: '/**',
-      },
-      {
-        protocol: 'https',
-        hostname: 'images.unsplash.com',
-        port: '',
-        pathname: '/**',
-      },
-      {
-        protocol: 'https',
-        hostname: 'picsum.photos',
-        port: '',
-        pathname: '/**',
-      },
-      {
-        protocol: 'https',
-        hostname: 'gateway.marvel.com',
-        port: '',
-        pathname: '/**',
-      },
-    ],
+    domains: ['res.cloudinary.com', 'images.unsplash.com'],
+    minimumCacheTTL: 60,
   },
+
+  // Compresión
   compress: true,
-  poweredByHeader: false,
-  generateEtags: false,
+
+  // Headers de seguridad y performance
   async headers() {
     return [
       {
@@ -55,24 +36,72 @@ const nextConfig = {
             key: 'Referrer-Policy',
             value: 'origin-when-cross-origin',
           },
+          {
+            key: 'Permissions-Policy',
+            value: 'camera=(), microphone=(), geolocation=()',
+          },
         ],
       },
-    ];
+      {
+        source: '/static/(.*)',
+        headers: [
+          {
+            key: 'Cache-Control',
+            value: 'public, max-age=31536000, immutable',
+          },
+        ],
+      },
+    ]
   },
-  // Deshabilitar critters completamente
-  webpack: (config, { dev, isServer }) => {
-    if (!dev && !isServer) {
-      config.optimization.splitChunks.cacheGroups = {
-        ...config.optimization.splitChunks.cacheGroups,
-        default: {
-          minChunks: 1,
-          priority: -20,
-          reuseExistingChunk: true,
-        },
-      };
-    }
-    return config;
-  },
-};
 
-module.exports = nextConfig;
+  // Redirecciones para SEO
+  async redirects() {
+    return [
+      {
+        source: '/frontend-development-tips',
+        destination: '/',
+        permanent: true,
+      },
+    ]
+  },
+
+  // Configuración de webpack para optimizaciones
+  webpack: (config, { dev, isServer }) => {
+    // Optimizaciones para producción
+    if (!dev && !isServer) {
+      config.optimization.splitChunks = {
+        chunks: 'all',
+        cacheGroups: {
+          vendor: {
+            test: /[\\/]node_modules[\\/]/,
+            name: 'vendors',
+            chunks: 'all',
+          },
+        },
+      }
+    }
+
+    return config
+  },
+
+  // Configuración de TypeScript
+  typescript: {
+    ignoreBuildErrors: false,
+  },
+
+  // Configuración de ESLint
+  eslint: {
+    ignoreDuringBuilds: false,
+  },
+
+  // Configuración de output
+  output: 'standalone',
+
+  // Configuración de trailing slash
+  trailingSlash: false,
+
+  // Configuración de poweredByHeader
+  poweredByHeader: false,
+}
+
+module.exports = nextConfig

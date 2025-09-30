@@ -16,7 +16,8 @@
     "analyze": "ANALYZE=true npm run build",
     "clean": "rm -rf .next && rm -rf node_modules/.cache",
     "format": "prettier --write .",
-    "format:check": "prettier --check ."
+    "format:check": "prettier --check .",
+    "build:analyze": "npm run build && npm run analyze"
   },
   "dependencies": {
     "@headlessui/react": "^1.7.15",
