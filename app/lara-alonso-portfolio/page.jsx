@@ -1,4 +1,5 @@
 
+"use client";
 import Image from "next/image";
 import { Footer } from "../components/ui/Footer";
 import { Linkgit } from "../components/linkgit";
@@ -13,70 +14,122 @@ export default function Portfolio() {
       </Head>
       <div className="bg-[#D9D9D7]">
         <Navbar />
-        <div className="flex flex-col mt-20">
-          <div className="flex overflow-hidden mt-[-12rem] 3xl:mt-[-20rem] w-auto justify-center items-center">
-            <Image
-              src="/img/inicio.jpg"
-              width={1960}
-              height={1358}
-              alt="Lara Alonso inicio"
-              className="hidden sm:block min-h-screen object-cover"
-            />
-            <Image
-              src="/img/inicioMovil.jpg"
-              width={1300}
-              height={1295}
-              alt="Lara Alonso inicioMv"
-              className="min-h-screen object-cover sm:hidden"
-            />
-          </div>
-          
-          <div className="mx-auto max-w-5xl px-6 pt-12 items-center text-lg leading-8 text-black">
-            <div className="mt-10 text-left text-3xl font-bold">Lara Alonso</div>
-            <br />
-            <p className="text-lg leading-relaxed">
-              No se trataba solamente de crear una web donde mostrar mis conocimientos.
-              Es una forma de ayudar a otros a emprender su camino en el mundo web.
-              Mi trayectoria comenzó en la Ingeniería Industrial, pero mi amor por el diseño y
-              la tecnología me llevó a completar un FP en Desarrollo de Aplicaciones Web y dedicarme al mundo de la programación.
-            </p>
-            <div className="flex mt-10">
-              <Linkgit />
+        {/* Hero mobile-first inspirado en Magpie */}
+        <section className="relative isolate pt-28 sm:pt-36 pb-12 sm:pb-20 text-black">
+          <div className="mx-auto max-w-5xl px-6">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 items-center">
+              <div>
+                <h1 className="text-3xl sm:text-5xl font-extrabold leading-tight">
+                  Diseño responsive con enfoque mobile-first
+                </h1>
+                <p className="mt-4 text-base sm:text-lg leading-relaxed">
+                  Inspirado en el case study de Magpie, reorganicé mi portfolio para priorizar
+                  claridad, jerarquía visual y una galería de pantallas scrollable.
+                </p>
+                <div className="mt-6 flex flex-wrap gap-3">
+                  <a href="#screens" className="px-5 py-3 rounded-full bg-black text-white text-sm sm:text-base hover:opacity-90 transition">
+                    Ver pantallas
+                  </a>
+                  <a href="#case-study" className="px-5 py-3 rounded-full border border-black text-sm sm:text-base hover:bg-black hover:text-white transition">
+                    Leer case study
+                  </a>
+                </div>
+                <div className="mt-6">
+                  <Linkgit />
+                </div>
+              </div>
+              <div className="relative h-[380px] sm:h-[520px]">
+                <Image
+                  src="https://res.cloudinary.com/nodefacebook/image/upload/v1707993155/blogapp/pexels-ana-madeleine-uribe-2762942_e4rdam.jpg"
+                  alt="Hero visual"
+                  fill
+                  priority
+                  sizes="(max-width: 640px) 100vw, 50vw"
+                  className="rounded-2xl object-cover shadow-xl"
+                />
+              </div>
             </div>
           </div>
-          
-          <div className="flex justify-center">
-            <div className="2md:flex justify-around lg:gap-20 max-w-5xl mt-32">
-              <a href="https://www.lara-alonso.com/" className="group">
-                <Image
-                  src="/img/mock1.jpg"
-                  width={300}
-                  height={1316}
-                  alt="www.lara-alonso.com"
-                  className="h-[600px] w-auto transition-transform duration-300 group-hover:scale-105"
-                />
+        </section>
+
+        {/* Galería horizontal con scroll-snap */}
+        <section id="screens" className="relative py-10 sm:py-16">
+          <div className="mx-auto max-w-6xl px-6">
+            <div className="flex items-end justify-between mb-6">
+              <h2 className="text-2xl sm:text-3xl font-bold text-black">Pantallas</h2>
+              <div className="hidden sm:flex gap-3">
+                <a href="#slide-1" className="px-3 py-2 rounded-full border border-black text-sm hover:bg-black hover:text-white transition">1</a>
+                <a href="#slide-2" className="px-3 py-2 rounded-full border border-black text-sm hover:bg-black hover:text-white transition">2</a>
+                <a href="#slide-3" className="px-3 py-2 rounded-full border border-black text-sm hover:bg-black hover:text-white transition">3</a>
+              </div>
+            </div>
+
+            <div className="relative">
+              <div className="flex gap-6 overflow-x-auto snap-x snap-mandatory scroll-smooth pb-6">
+                <a id="slide-1" href="https://www.lara-alonso.com/" className="group snap-start shrink-0 w-[80%] sm:w-[420px]">
+                  <div className="relative h-[520px] rounded-2xl overflow-hidden shadow-lg">
+                    <Image
+                      src="https://res.cloudinary.com/nodefacebook/image/upload/v1707993155/blogapp/pexels-rene-strgar-10406184_nrz4qv.jpg"
+                      alt="Proyecto 1"
+                      fill
+                      sizes="(max-width: 640px) 80vw, 420px"
+                      className="object-cover"
+                    />
+                  </div>
+                  <p className="mt-3 text-sm text-black/70">Sitio personal</p>
+                </a>
+
+                <a id="slide-2" href="https://github.com/Aiadevop?tab=repositories" className="group snap-start shrink-0 w-[80%] sm:w-[420px]">
+                  <div className="relative h-[520px] rounded-2xl overflow-hidden shadow-lg">
+                    <Image
+                      src="https://res.cloudinary.com/nodefacebook/image/upload/v1707993155/blogapp/pexels-malidate-van-784633_leyuto.jpg"
+                      alt="Repositorio"
+                      fill
+                      sizes="(max-width: 640px) 80vw, 420px"
+                      className="object-cover"
+                    />
+                  </div>
+                  <p className="mt-3 text-sm text-black/70">Repos públicos</p>
+                </a>
+
+                <a id="slide-3" href="https://github.com/Aiadevop/hebe-web" className="group snap-start shrink-0 w-[80%] sm:w-[420px]">
+                  <div className="relative h-[520px] rounded-2xl overflow-hidden shadow-lg">
+                    <Image
+                      src="https://res.cloudinary.com/nodefacebook/image/upload/v1707993155/blogapp/pexels-ana-madeleine-uribe-2762942_e4rdam.jpg"
+                      alt="Hebe Web"
+                      fill
+                      sizes="(max-width: 640px) 80vw, 420px"
+                      className="object-cover"
+                    />
+                  </div>
+                  <p className="mt-3 text-sm text-black/70">Hebe Web</p>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* CTA Case Study */}
+        <section id="case-study" className="py-12 sm:py-20">
+          <div className="mx-auto max-w-5xl px-6 text-center text-black">
+            <h3 className="text-2xl sm:text-3xl font-bold">¿Quieres ver el proceso completo?</h3>
+            <p className="mt-4 text-base sm:text-lg">Explora decisiones de UX/UI, wireframes y la evolución visual.</p>
+            <div className="mt-6 flex flex-wrap gap-3 justify-center">
+              <a
+                href="https://www.lara-alonso.com/"
+                className="px-6 py-3 rounded-full bg-black text-white hover:opacity-90 transition"
+              >
+                Leer case study
               </a>
-              <a href="https://github.com/Aiadevop?tab=repositories" className="group">
-                <Image
-                  src="/img/mock3.jpg"
-                  width={300}
-                  height={1316}
-                  alt="aplicacion ChatGPT"
-                  className="h-[600px] w-auto transition-transform duration-300 group-hover:scale-105"
-                />
-              </a>
-              <a href="https://github.com/Aiadevop/hebe-web" className="group">
-                <Image
-                  src="/img/mock2.jpg"
-                  width={300}
-                  height={1316}
-                  alt="gimnasio"
-                  className="h-[600px] w-auto transition-transform duration-300 group-hover:scale-105"
-                />
+              <a
+                href="https://github.com/Aiadevop"
+                className="px-6 py-3 rounded-full border border-black hover:bg-black hover:text-white transition"
+              >
+                Ver código
               </a>
             </div>
           </div>
-        </div>
+        </section>
         
         <div className="mx-auto max-w-5xl px-6 pt-12 pb-36 items-center text-lg leading-8 text-black">
           <div className="mt-10 text-left text-3xl font-bold">Animaciones y efectos para tus webs</div>
