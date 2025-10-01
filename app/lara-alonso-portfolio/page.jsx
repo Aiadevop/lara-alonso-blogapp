@@ -2,37 +2,64 @@
 import Image from "next/image";
 import { Footer } from "../components/ui/Footer";
 import { Linkgit } from "../components/linkgit";
-import Head from "next/head";
 import Navbar from "../components/ui/Navbar";
+
+export const metadata = {
+  title: "Portfolio | Lara Alonso",
+  description: "Portfolio de Lara Alonso (@aiadevop). Frontend moderno, accesible y optimizado.",
+  alternates: { canonical: "/lara-alonso-portfolio" },
+  openGraph: {
+    title: "Portfolio | Lara Alonso",
+    description: "Frontend moderno, accesible y optimizado.",
+    url: "/lara-alonso-portfolio",
+    images: [
+      {
+        url: "https://res.cloudinary.com/nodefacebook/image/upload/v1707993155/blogapp/og-portfolio_fv5v1m.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Portfolio de Lara Alonso",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Portfolio | Lara Alonso",
+    description: "Frontend moderno, accesible y optimizado.",
+    images: [
+      "https://res.cloudinary.com/nodefacebook/image/upload/v1707993155/blogapp/og-portfolio_fv5v1m.jpg",
+    ],
+  },
+};
 
 export default function Portfolio() {
   return (
     <>
-      <Head>
-        <title>Lara Alonso @aiadevop portfolio</title>
-      </Head>
       <div className="bg-[#D9D9D7]">
         <Navbar />
-        <div className="flex flex-col mt-20">
-          <div className="flex overflow-hidden mt-[-12rem] 3xl:mt-[-20rem] w-auto justify-center items-center">
+        <main id="main-content" role="main" className="flex flex-col mt-20">
+          <section className="flex overflow-hidden mt-[-12rem] 3xl:mt-[-20rem] w-auto justify-center items-center" aria-label="Portada">
             <Image
               src="/img/inicio.jpg"
               width={1960}
               height={1358}
               alt="Lara Alonso inicio"
-              className="hidden sm:block min-h-screen object-cover"
+               priority
+               sizes="(min-width: 640px) 100vw, 100vw"
+               className="hidden sm:block min-h-screen object-cover"
             />
             <Image
               src="/img/inicioMovil.jpg"
               width={1300}
               height={1295}
               alt="Lara Alonso inicioMv"
+               loading="eager"
+               sizes="(max-width: 639px) 100vw"
               className="min-h-screen object-cover sm:hidden"
             />
-          </div>
+          </section>
           
-          <div className="mx-auto max-w-5xl px-6 pt-12 items-center text-lg leading-8 text-black">
-            <div className="mt-10 text-left text-3xl font-bold">Lara Alonso</div>
+          <section className="mx-auto max-w-5xl px-6 pt-12 items-center text-lg leading-8 text-black">
+            <h1 className="mt-10 text-left text-3xl font-bold">Lara Alonso</h1>
             <br />
             <p className="text-lg leading-relaxed">
               No se trataba solamente de crear una web donde mostrar mis conocimientos.
@@ -44,40 +71,46 @@ export default function Portfolio() {
             <div className="flex mt-10">
               <Linkgit />
             </div>
-          </div>
+          </section>
           
-          <div className="flex justify-center">
+          <section className="flex justify-center" aria-label="Proyectos">
             <div className="2md:flex justify-around lg:gap-20 max-w-5xl mt-32">
-              <a href="https://www.lara-alonso.com/" className="group">
+              <a href="https://www.lara-alonso.com/" className="group" target="_blank" rel="noopener noreferrer">
                 <Image
                   src="/img/mock1.jpg"
                   width={300}
                   height={1316}
                   alt="www.lara-alonso.com"
+                  loading="lazy"
+                  sizes="(min-width: 900px) 300px, 50vw"
                   className="h-[600px] w-auto transition-transform duration-300 group-hover:scale-105"
                 />
               </a>
-              <a href="https://github.com/Aiadevop?tab=repositories" className="group">
+              <a href="https://github.com/Aiadevop?tab=repositories" className="group" target="_blank" rel="noopener noreferrer">
                 <Image
                   src="/img/mock3.jpg"
                   width={300}
                   height={1316}
                   alt="aplicacion ChatGPT"
+                  loading="lazy"
+                  sizes="(min-width: 900px) 300px, 50vw"
                   className="h-[600px] w-auto transition-transform duration-300 group-hover:scale-105"
                 />
               </a>
-              <a href="https://github.com/Aiadevop/hebe-web" className="group">
+              <a href="https://github.com/Aiadevop/hebe-web" className="group" target="_blank" rel="noopener noreferrer">
                 <Image
                   src="/img/mock2.jpg"
                   width={300}
                   height={1316}
                   alt="gimnasio"
+                  loading="lazy"
+                  sizes="(min-width: 900px) 300px, 50vw"
                   className="h-[600px] w-auto transition-transform duration-300 group-hover:scale-105"
                 />
               </a>
             </div>
-          </div>
-        </div>
+          </section>
+        </main>
         
         <div className="mx-auto max-w-5xl px-6 pt-12 pb-36 items-center text-lg leading-8 text-black">
           <div className="mt-10 text-left text-3xl font-bold">Animaciones y efectos para tus webs</div>
@@ -88,17 +121,17 @@ export default function Portfolio() {
           </p>
         </div>
         
-        <div className="parallax bg-custom1 bg-fixed bg-center bg-no-repeat bg-cover h-[1500px]"></div>
+        <div className="parallax bg-custom1 bg-fixed bg-center bg-no-repeat bg-cover h-[1500px]" role="img" aria-label="Fondo parallax 1"></div>
 
         {/* Sección de Pizza Artesanal - Diseño más sutil */}
-        <div className="texto leading-8 text-black h-[500px] p-8 text-lg md:text-3xl flex items-center justify-center align-middle">
+        <section className="texto leading-8 text-black h-[500px] p-8 text-lg md:text-3xl flex items-center justify-center align-middle" aria-labelledby="pizza-title">
           <div className="text-center max-w-4xl mx-auto">
             <div className="bg-white/95 backdrop-blur-sm rounded-2xl p-8 shadow-xl border border-gray-200/50">
               <div className="flex items-center justify-center mb-8">
                 <div className="w-12 h-12 bg-gradient-to-r from-orange-400 to-red-500 rounded-full flex items-center justify-center mr-4">
                   <span className="text-white text-xl">🍕</span>
                 </div>
-                <h2 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-orange-600 to-red-600 bg-clip-text text-transparent">
+                <h2 id="pizza-title" className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-orange-600 to-red-600 bg-clip-text text-transparent">
                   Pizza Artesanal
                 </h2>
               </div>
@@ -130,19 +163,19 @@ export default function Portfolio() {
               </div>
             </div>
           </div>
-        </div>
+        </section>
         
-        <div className="parallax2 bg-custom2 bg-fixed bg-center bg-no-repeat bg-cover h-[1000px]"></div>
+        <div className="parallax2 bg-custom2 bg-fixed bg-center bg-no-repeat bg-cover h-[1000px]" role="img" aria-label="Fondo parallax 2"></div>
 
         {/* Sección de Horno de Leña - Diseño más sutil */}
-        <div className="texto leading-8 text-black h-[500px] p-8 text-lg md:text-3xl flex items-center justify-center align-middle">
+        <section className="texto leading-8 text-black h-[500px] p-8 text-lg md:text-3xl flex items-center justify-center align-middle" aria-labelledby="horno-title">
           <div className="text-center max-w-4xl mx-auto">
             <div className="bg-white/95 backdrop-blur-sm rounded-2xl p-8 shadow-xl border border-gray-200/50">
               <div className="flex items-center justify-center mb-8">
                 <div className="w-12 h-12 bg-gradient-to-r from-yellow-600 to-orange-600 rounded-full flex items-center justify-center mr-4">
                   <span className="text-white text-xl">🔥</span>
                 </div>
-                <h2 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-yellow-600 to-orange-600 bg-clip-text text-transparent">
+                <h2 id="horno-title" className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-yellow-600 to-orange-600 bg-clip-text text-transparent">
                   Horno de Leña
                 </h2>
               </div>
@@ -176,9 +209,9 @@ export default function Portfolio() {
               </div>
             </div>
           </div>
-        </div>
+        </section>
 
-        <div className="parallax3 bg-custom3 bg-fixed bg-center bg-no-repeat bg-cover h-[1000px]"></div>
+        <div className="parallax3 bg-custom3 bg-fixed bg-center bg-no-repeat bg-cover h-[1000px]" role="img" aria-label="Fondo parallax 3"></div>
         
         {/* Botón "Volver arriba" mejorado */}
         <div className="fixed bottom-8 right-8 z-50">
