@@ -1,0 +1,514 @@
+# Reglas de Arquitectura - Lara Alonso Blog App
+
+## 🏗️ ESTRUCTURA DEL PROYECTO
+
+### Organización de Directorios
+- **app/**: Directorio principal de Next.js 13+ con App Router
+  - **components/**: Componentes reutilizables organizados por funcionalidad
+    - **ui/**: Componentes de interfaz de usuario (TypeScript obligatorio)
+    - Componentes específicos del dominio en el nivel raíz
+  - **api/**: Rutas de API con estructura RESTful
+  - **lib/**: Utilidades, configuraciones y helpers
+  - **globals.css**: Estilos globales y variables CSS
+  - **layout.tsx**: Layout raíz de la aplicación
+  - **page.tsx**: Página principal
+
+### Convenciones de Nomenclatura
+- **Archivos de componentes**: PascalCase con extensión .tsx (ej: `PostCard.tsx`, `CategoryFilter.tsx`)
+- **Archivos de utilidades**: camelCase con extensión .ts (ej: `config.ts`, `utils.ts`)
+- **Archivos de páginas**: lowercase con guiones y extensión .tsx (ej: `frontend-development-tips/page.tsx`)
+- **Variables de entorno**: UPPER_SNAKE_CASE con prefijos descriptivos
+- **Funciones y variables**: camelCase
+- **Constantes**: UPPER_SNAKE_CASE
+- **Interfaces y tipos**: PascalCase con prefijo I para interfaces (ej: `IPost`, `IUser`)
+
+### Estructura de Componentes TypeScript
+```tsx
+// Estructura estándar para componentes TypeScript
+import React, { useState, useEffect } from 'react'
+import { NextPage } from 'next'
+
+// 1. Imports de librerías externas
+// 2. Imports de componentes internos
+// 3. Imports de utilidades y tipos
+// 4. Definición de interfaces y tipos
+interface ComponentProps {
+  title: string;
+  description?: string;
+  onAction?: (value: string) => void;
+}
+
+// 5. Componente principal con tipado
+const Component: NextPage<ComponentProps> = ({ title, description, onAction }) => {
+  const [state, setState] = useState<string>('')
+  
+  return (
+    <div>
+      <h1>{title}</h1>
+      {description && <p>{description}</p>}
+    </div>
+  )
+}
+
+// 6. Export default
+export default Component
+```
+
+## 📝 TYPESCRIPT
+
+### Configuración Obligatoria
+- **Todos los archivos de componentes**: Deben usar extensión `.tsx`
+- **Todos los archivos de utilidades**: Deben usar extensión `.ts`
+- **Configuración estricta**: `tsconfig.json` con `strict: true`
+- **Verificación de tipos**: Ejecutar `npm run type-check` antes de cada commit
+
+### Tipado de Componentes
+- **Props**: Siempre definir interfaces para las props de componentes
+- **Estado**: Tipar todos los estados con `useState<Type>()`
+- **Eventos**: Tipar eventos con `React.MouseEvent`, `React.ChangeEvent`, etc.
+- **Refs**: Usar `useRef<HTMLElement>()` con tipado apropiado
+
+### Interfaces y Tipos
+```typescript
+// Interfaces para datos
+interface Post {
+  id: number;
+  title: string;
+  description: string;
+  category: string;
+  imageUrl: string;
+  author: Author;
+}
+
+interface Author {
+  name: string;
+  imageUrl: string;
+  href?: string;
+}
+
+// Props de componentes
+interface PostCardProps {
+  post: Post;
+  onSelect?: (post: Post) => void;
+}
+
+// Tipos para funciones
+type CategoryFilter = (category: string | null) => void;
+```
+
+### Mejores Prácticas TypeScript
+- **Tipos estrictos**: Evitar `any`, usar tipos específicos
+- **Interfaces vs Types**: Usar interfaces para objetos, types para uniones
+- **Generics**: Usar generics para componentes reutilizables
+- **Utility Types**: Aprovechar `Partial<T>`, `Pick<T>`, `Omit<T>`
+- **Validación**: Usar librerías como Zod para validación de datos
+
+### Herramientas de Desarrollo
+- **ESLint**: Configuración con reglas de TypeScript
+- **Prettier**: Formateo automático de código TypeScript
+- **TypeScript Compiler**: Verificación de tipos en tiempo de compilación
+- **IntelliSense**: Autocompletado y detección de errores en IDE
+
+## 🔒 SEGURIDAD
+
+### Variables de Entorno
+- **NUNCA** commitees archivos `.env` al repositorio
+- Usa `.env.local` para desarrollo y variables de entorno del hosting para producción
+- Prefijo obligatorio para variables públicas: `NEXT_PUBLIC_`
+- Variables sensibles sin prefijo (solo servidor)
+- Validar todas las variables de entorno al inicio de la aplicación
+
+### APIs y Endpoints
+- **Validación de entrada**: Siempre validar parámetros de entrada en rutas API
+- **Rate limiting**: Implementar límites de velocidad para endpoints públicos
+- **CORS**: Configurar CORS apropiadamente (actualmente muy permisivo)
+- **Headers de seguridad**: Mantener headers de seguridad en `next.config.js`
+- **Sanitización**: Sanitizar todos los inputs del usuario
+- **Autenticación**: Implementar autenticación para endpoints sensibles
+
+### Manejo de Datos Sensibles
+- **API Keys**: Nunca exponer claves privadas en el cliente
+- **Hash de credenciales**: Usar hashing seguro para credenciales
+- **Tokens**: Implementar rotación de tokens y expiración
+- **Logs**: No registrar información sensible en logs
+
+### Configuración de Seguridad
+```javascript
+// Headers de seguridad obligatorios
+{
+  'X-Frame-Options': 'DENY',
+  'X-Content-Type-Options': 'nosniff',
+  'Referrer-Policy': 'origin-when-cross-origin',
+  'Permissions-Policy': 'camera=(), microphone=(), geolocation=()',
+  'Content-Security-Policy': 'default-src \'self\'; script-src \'self\' \'unsafe-inline\''
+}
+```
+
+## 🧪 TESTING Y CALIDAD
+
+### Testing Obligatorio
+- **Unit Tests**: Para utilidades y funciones puras
+- **Component Tests**: Para componentes críticos de UI
+- **Integration Tests**: Para flujos de API
+- **E2E Tests**: Para flujos de usuario principales
+- **Performance Tests**: Para componentes con animaciones o cálculos pesados
+
+### Herramientas de Testing
+```json
+{
+  "devDependencies": {
+    "@testing-library/react": "^14.0.0",
+    "@testing-library/jest-dom": "^6.0.0",
+    "@testing-library/user-event": "^14.0.0",
+    "jest": "^29.0.0",
+    "jest-environment-jsdom": "^29.0.0",
+    "@types/jest": "^29.0.0",
+    "@playwright/test": "^1.40.0",
+    "cypress": "^13.0.0",
+    "@types/testing-library__jest-dom": "^6.0.0"
+  }
+}
+```
+
+### Cobertura de Tests
+- **Mínimo 80%** de cobertura de código
+- **100%** de cobertura para funciones críticas de seguridad
+- Tests para todos los endpoints de API
+- Tests para componentes de UI principales
+
+### Linting y Formateo
+- **ESLint**: Configuración estricta con reglas de Next.js
+- **Prettier**: Formateo automático de código
+- **Husky**: Pre-commit hooks para validación
+- **TypeScript**: Verificación de tipos estricta
+
+### Scripts de Calidad
+```json
+{
+  "scripts": {
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "test:e2e": "playwright test",
+    "lint": "next lint",
+    "lint:fix": "next lint --fix",
+    "type-check": "tsc --noEmit",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "quality": "npm run lint && npm run type-check && npm run test"
+  }
+}
+```
+
+## 📈 ESCALABILIDAD Y MANTENIBILIDAD
+
+### Arquitectura de Componentes
+- **Componentes atómicos**: Crear componentes pequeños y reutilizables
+- **Composición**: Preferir composición sobre herencia
+- **Props interface**: Definir interfaces claras para props
+- **Estado local**: Minimizar estado global, usar estado local cuando sea posible
+- **Custom hooks**: Extraer lógica reutilizable en custom hooks
+
+### Gestión de Estado
+- **React Context**: Para estado global simple
+- **Zustand/Redux**: Para estado complejo (evaluar necesidad)
+- **Server State**: Usar React Query/SWR para datos del servidor
+- **Local Storage**: Para preferencias del usuario
+
+### Performance
+- **Lazy Loading**: Implementar lazy loading para componentes pesados
+- **Image Optimization**: Usar Next.js Image component siempre
+- **Code Splitting**: Dividir código por rutas y funcionalidades
+- **Memoización**: Usar React.memo, useMemo, useCallback apropiadamente
+- **Bundle Analysis**: Analizar tamaño de bundles regularmente
+
+### Optimizaciones de Next.js
+```javascript
+// Configuración de optimización
+{
+  experimental: {
+    optimizeCss: true,
+    optimizePackageImports: ['@headlessui/react', '@heroicons/react'],
+  },
+  images: {
+    formats: ['image/avif', 'image/webp'],
+    deviceSizes: [640, 750, 828, 1080, 1200, 1920, 2048, 3840],
+    minimumCacheTTL: 60,
+  },
+  compress: true,
+  poweredByHeader: false
+}
+```
+
+### Base de Datos y APIs
+- **Supabase**: Para base de datos y autenticación
+- **API Routes**: Estructura RESTful con validación
+- **Caching**: Implementar estrategias de caché apropiadas
+- **Error Handling**: Manejo consistente de errores
+- **Rate Limiting**: Proteger endpoints de abuso
+
+### Documentación
+- **README**: Documentación completa del proyecto
+- **API Docs**: Documentar todos los endpoints
+- **Component Docs**: Documentar componentes complejos
+- **Deployment**: Guía de despliegue y configuración
+- **Changelog**: Mantener registro de cambios
+
+## 🚀 DESARROLLO Y DEPLOYMENT
+
+### Git Workflow
+- **Branching**: Git Flow con branches feature, develop, main
+- **Commits**: Commits semánticos (feat:, fix:, docs:, etc.)
+- **Pull Requests**: Revisión obligatoria de código
+- **CI/CD**: Pipeline automatizado de testing y deployment
+
+### Entornos
+- **Development**: Configuración local con hot reload
+- **Staging**: Entorno de pruebas con datos de prueba
+- **Production**: Entorno optimizado con monitoreo
+
+### Monitoreo y Analytics
+- **Vercel Analytics**: Para métricas de performance
+- **Error Tracking**: Implementar Sentry o similar
+- **Performance Monitoring**: Monitorear Core Web Vitals
+- **Uptime Monitoring**: Verificar disponibilidad del sitio
+
+### Backup y Recuperación
+- **Database Backups**: Backups automáticos de Supabase
+- **Code Backups**: Repositorio Git como backup principal
+- **Asset Backups**: Backup de imágenes y assets estáticos
+- **Disaster Recovery**: Plan de recuperación documentado
+
+## 📱 RESPONSIVE Y ACCESIBILIDAD
+
+### Responsive Design
+- **Mobile First**: Diseño mobile-first con Tailwind CSS
+- **Breakpoints**: Usar breakpoints estándar de Tailwind
+- **Touch Targets**: Mínimo 44px para elementos táctiles
+- **Viewport**: Configuración correcta del viewport
+
+### Accesibilidad (A11y)
+- **Semantic HTML**: Usar elementos semánticos apropiados
+- **ARIA Labels**: Etiquetas ARIA para elementos interactivos
+- **Keyboard Navigation**: Navegación completa por teclado
+- **Screen Readers**: Compatibilidad con lectores de pantalla
+- **Color Contrast**: Cumplir ratios de contraste WCAG AA
+- **Focus Management**: Gestión apropiada del foco
+
+### Testing de Accesibilidad
+```bash
+# Herramientas recomendadas
+npm install --save-dev @axe-core/react
+npm install --save-dev jest-axe
+```
+
+## 📦 GESTIÓN SEGURA DE DEPENDENCIAS
+
+### Política de Actualizaciones
+- **NUNCA** ejecutar `npm update` o `npm install` sin revisión previa
+- **NUNCA** usar `npm audit fix` automáticamente
+- **SIEMPRE** investigar vulnerabilidades antes de actualizar
+- **SIEMPRE** verificar la reputación de los paquetes nuevos
+
+### Proceso de Actualización Segura
+1. **Audit de Seguridad**: Ejecutar `npm audit` para identificar vulnerabilidades
+2. **Investigación**: Investigar cada vulnerabilidad en:
+   - GitHub Security Advisories
+   - Snyk Vulnerability Database
+   - NPM Security Advisories
+   - CVE Database
+3. **Evaluación de Riesgo**: Clasificar vulnerabilidades por:
+   - Severidad (Critical, High, Moderate, Low)
+   - Impacto en el proyecto
+   - Disponibilidad de parches seguros
+4. **Actualización Selectiva**: Actualizar solo dependencias con vulnerabilidades críticas/altas
+5. **Testing**: Probar exhaustivamente después de cada actualización
+
+### Herramientas de Seguridad
+```bash
+# Verificar vulnerabilidades
+npm audit
+
+# Verificar licencias
+npm audit --audit-level=moderate
+
+# Verificar paquetes obsoletos (sin actualizar)
+npm outdated
+
+# Verificar integridad de paquetes
+npm ci --audit
+
+# Análisis de dependencias
+npx audit-ci --config audit-ci.json
+```
+
+### Configuración de Seguridad
+```json
+// .npmrc - Configuración segura de npm
+audit-level=moderate
+fund=false
+update-notifier=false
+save-exact=true
+package-lock=true
+```
+
+### Verificación de Paquetes
+- **Verificar autor**: Revisar la reputación del mantenedor
+- **Verificar downloads**: Paquetes con muchas descargas son más seguros
+- **Verificar última actualización**: Evitar paquetes abandonados
+- **Verificar dependencias**: Revisar las dependencias del paquete
+- **Verificar código fuente**: Revisar el código en GitHub cuando sea posible
+
+### Dependencias Críticas a Monitorear
+- **Next.js**: Framework principal
+- **React**: Biblioteca de UI
+- **TypeScript**: Sistema de tipos
+- **Tailwind CSS**: Framework de estilos
+- **ESLint**: Linter de código
+- **Prettier**: Formateador de código
+- **@types/react**: Tipos de React para TypeScript
+- **@types/node**: Tipos de Node.js para TypeScript
+
+### Alertas de Seguridad
+- Configurar alertas de GitHub para dependencias
+- Monitorear feeds de seguridad de npm
+- Revisar semanalmente vulnerabilidades conocidas
+- Mantener lista de dependencias críticas actualizada
+
+### Backup Antes de Actualizaciones
+- **Commit completo**: Hacer commit antes de cualquier actualización
+- **Branch de testing**: Crear branch específico para testing
+- **Rollback plan**: Tener plan de rollback documentado
+- **Testing exhaustivo**: Probar todas las funcionalidades después de actualizar
+
+## 🔧 HERRAMIENTAS Y CONFIGURACIÓN
+
+### Desarrollo
+- **VS Code**: Editor recomendado con extensiones específicas
+- **Extensions**: ESLint, Prettier, Tailwind CSS IntelliSense
+- **Debugging**: Configuración de debugging para Next.js
+- **Hot Reload**: Configuración optimizada de hot reload
+
+### Build y Deployment
+- **Vercel**: Plataforma de deployment recomendada
+- **Environment Variables**: Configuración segura de variables
+- **Build Optimization**: Optimizaciones de build para producción
+- **CDN**: Configuración de CDN para assets estáticos
+
+### Monitoreo
+- **Performance**: Core Web Vitals y métricas de performance
+- **Errors**: Tracking de errores en tiempo real
+- **Analytics**: Métricas de uso y comportamiento
+- **Uptime**: Monitoreo de disponibilidad
+
+## 🔄 MIGRACIÓN A TYPESCRIPT
+
+### Proceso de Migración
+1. **Configuración inicial**:
+   - Crear `tsconfig.json` con configuración estricta
+   - Instalar dependencias de TypeScript
+   - Configurar ESLint para TypeScript
+
+2. **Migración de archivos**:
+   - Renombrar `.jsx` → `.tsx`
+   - Renombrar `.js` → `.ts`
+   - Actualizar imports para usar extensiones `.tsx`/`.ts`
+
+3. **Tipado progresivo**:
+   - Definir interfaces para props de componentes
+   - Tipar estados con `useState<Type>()`
+   - Agregar tipos para funciones y eventos
+   - Eliminar gradualmente el uso de `any`
+
+4. **Validación**:
+   - Ejecutar `npm run type-check`
+   - Corregir errores de tipos
+   - Verificar que la aplicación compile sin errores
+
+### Archivos a Migrar
+- `app/page.jsx` → `app/page.tsx`
+- `app/layout.js` → `app/layout.tsx`
+- `app/components/ui/*.jsx` → `app/components/ui/*.tsx`
+- `app/lib/*.js` → `app/lib/*.ts`
+- `app/api/**/*.js` → `app/api/**/*.ts`
+
+### Configuración TypeScript
+```json
+{
+  "compilerOptions": {
+    "target": "es5",
+    "lib": ["dom", "dom.iterable", "es6"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./app/*"]
+    }
+  },
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "exclude": ["node_modules"]
+}
+```
+
+## 📋 CHECKLIST DE IMPLEMENTACIÓN
+
+### Antes de cada commit:
+- [ ] Tests pasando
+- [ ] Linting sin errores
+- [ ] Type checking exitoso
+- [ ] Build exitoso
+- [ ] Performance aceptable
+- [ ] Accesibilidad verificada
+- [ ] Dependencias verificadas (sin vulnerabilidades críticas)
+
+### Antes de cada release:
+- [ ] Todos los tests pasando
+- [ ] Documentación actualizada
+- [ ] Changelog actualizado
+- [ ] Performance optimizada
+- [ ] Seguridad verificada
+- [ ] Backup realizado
+- [ ] Audit de dependencias limpio
+- [ ] Dependencias críticas actualizadas y probadas
+
+### Mantenimiento regular:
+- [ ] **Audit de dependencias** (semanal)
+- [ ] **Investigación de vulnerabilidades** (cuando aparezcan)
+- [ ] **Actualización selectiva** (solo vulnerabilidades críticas/altas)
+- [ ] Revisar métricas de performance
+- [ ] Verificar logs de errores
+- [ ] Actualizar documentación
+- [ ] Revisar configuración de seguridad
+- [ ] **Verificar integridad de package-lock.json**
+
+### Proceso de Actualización de Dependencias:
+- [ ] Hacer commit completo del estado actual
+- [ ] Crear branch de testing
+- [ ] Ejecutar `npm audit` y documentar vulnerabilidades
+- [ ] Investigar cada vulnerabilidad en fuentes oficiales
+- [ ] Clasificar por severidad e impacto
+- [ ] Actualizar solo dependencias críticas/altas
+- [ ] Ejecutar tests completos
+- [ ] Probar funcionalidades principales
+- [ ] Verificar que no hay regresiones
+- [ ] Documentar cambios realizados
+- [ ] Merge a branch principal solo si todo está OK
+
+---
+
+**Nota**: Estas reglas deben ser revisadas y actualizadas regularmente según la evolución del proyecto y las mejores prácticas de la industria.

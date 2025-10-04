@@ -5,7 +5,7 @@
         "href": "/frontend-development-tips/1",
         "description": "¿No sabes ni por donde empezar?, aquí te dejo un post para que puedas por lo menos tener tu página web inicial con Next.js",
         "category": "Next.js",
-        "imageUrl": "/img/initialapp.PNG ",
+        "imageUrl": "/img/initialapp.PNG",
         "alt": "Next.js 13",
         "date": "Vie 12 Junio 2023",
         "datetime": "2023-06-12",
@@ -21,7 +21,7 @@
         "href": "/frontend-development-tips/2",
         "description": "¿Has puesto 200 console log en tu código y sigues sin encontrar el error? Aprende a debuggar con este post.",
         "category": "VSC",
-        "imageUrl": "/img/debug.PNG ",
+        "imageUrl": "/img/debug.PNG",
         "alt": "Attach Visual Studio Code",
         "date": "Vie 13 Junio 2023",
         "datetime": "2023-06-13",
@@ -36,7 +36,7 @@
         "href": "frontend-development-tips/3",
         "description": "Vale, Next.js 13 ha llegado, pero ¿sabes cómo usar el nuevo sistema de rutas? Aquí te lo explico.",
         "category": "Next.js",
-        "imageUrl": "/img/routes.PNG ",
+        "imageUrl": "/img/routes.PNG",
         "alt": "Next.js 13",
         "date": "Vie 12 Junio 2023",
         "datetime": "2023-06-12",
@@ -252,7 +252,7 @@
         "datetime": "2024-03-12",
         "author": {
             "name": "Lara Alonso",
-            "imageUrl": "/img/profileIcon.jpg "
+            "imageUrl": "/img/profileIcon.jpg"
         }
     },
     {
@@ -267,7 +267,7 @@
         "datetime": "2024-07-27",
         "author": {
             "name": "Lara Alonso",
-            "imageUrl": "/img/profileIcon.jpg "
+            "imageUrl": "/img/profileIcon.jpg"
         }
     },
     {
@@ -282,7 +282,7 @@
         "datetime": "2025-01-02",
         "author": {
             "name": "Lara Alonso",
-            "imageUrl": "/img/profileIcon.jpg "
+            "imageUrl": "/img/profileIcon.jpg"
         }
     },
     {
@@ -297,7 +297,7 @@
         "datetime": "2025-03-14",
         "author": {
             "name": "Lara Alonso",
-            "imageUrl": "/img/profileIcon.jpg "
+            "imageUrl": "/img/profileIcon.jpg"
         }
     }
 

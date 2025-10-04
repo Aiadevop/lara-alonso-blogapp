@@ -1,7 +1,7 @@
 "use client";
 /* eslint-disable @next/next/no-img-element */
 import { FooterBlack } from "@/app/components/footerblack";
-import Navbarblack from "@/app/components/navbar";
+import Navbar from "@/app/components/ui/Navbar";
 import Link from "next/link";
 import { useEffect, useState } from 'react';
 
@@ -51,7 +51,7 @@ export default function Page18() {
 
     return (
         <div className="bg-black">
-            <Navbarblack />
+            <Navbar />
             <article className="max-w-5xl px-6 py-24 mx-auto space-y-12 bg-gray-100 text-gray-900 mt-20">
                 <div className="w-full mx-auto space-y-4 text-center">
                     <h1 className="text-4xl font-bold leadi md:text-5xl px-10">Fetch a la API de Marvel</h1>

@@ -1,5 +1,5 @@
 import { FooterBlack } from "@/app/components/footerblack";
-import Navbarblack from "@/app/components/navbar";
+import Navbar from "@/app/components/ui/Navbar";
 import Head from "next/head";
 import Link from "next/link";
 
@@ -9,7 +9,7 @@ export default function Page1() {
     <>
       <Head>Lara Alonso lara-alonso @aiadevop Blog Next.js React</Head>
       <div className="bg-black">
-        <Navbarblack />
+        <Navbar />
         <article className="max-w-5xl px-6 py-24 mx-auto space-y-12 bg-gray-100 text-gray-900 mt-20">
           <div className="w-full mx-auto space-y-4 text-center">
             <h1 className="text-4xl font-bold leading-tight md:text-6xl bg-gradient-to-r from-violet-600 to-purple-600 bg-clip-text text-transparent">Crea tu primera aplicación en Next.js 13</h1>
